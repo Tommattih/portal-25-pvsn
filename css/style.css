@@ -25,19 +25,19 @@ h1{
 }
 /*header nav{
     transform: scale(0.9) translateY(-10px);
-}*/
+} devo?*/
 header nav ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: baseline;
-    flex-direction: row;
-    padding: 15px 0;
+    flex-wrap: wrap;
+    padding: 10px 0;
     text-align: center;
 }
 
 header .bloco ul li img{
-    /* max-width: 10vh; */
-    transition: .4s;
+    max-width: 12vh;
+    /*transition: .4s;*/
 }
 header .bloco nav p{
     font-size: 1rem;
@@ -48,7 +48,7 @@ main .container{
     padding: 0 20px;
 }
 main .container h2{
-    padding: 0 0 0 20px;
+    padding: 5px 20px;
     background-color: #8080804a;
     margin: 0 0 40px 0px;
 }
@@ -70,7 +70,11 @@ main .esquadria section .door figure img{
     min-width: 200px;
 }
 
-
+main #mapa{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
 
 /* FOOTER */
 footer{
@@ -86,15 +90,13 @@ footer nav{
     margin-bottom: 10px;
 }
 footer nav .redes-sociais{
-    justify-content: space-evenly;
+    justify-content: center;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 10px;
 }
 footer nav .redes-sociais li{
-    margin: 15px 28px;
-    text-align: center;
-    display: inline-block;
+    margin: 10px 20px;
 }
 footer nav .redes-sociais li a{
     color: var(--corDoMeio);
