@@ -28,6 +28,13 @@ h1{
     -webkit-text-emphasis-style: triangle;
 }
 
+.button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 2.5rem;
+}
+
 header nav ul{
     display: flex;
     justify-content: space-evenly;
@@ -50,20 +57,30 @@ header .bloco nav p{
 
 /* MAIN */
 
-main .container{
-    padding: 0 20px;
+main .container,
+main h3{
+    padding: 5px 20px;
 }
 
 main .container h2{
-    padding: 5px 20px;
-    background-color: #8080804a;
-    margin: 10px 0;
+    background-color: #455943;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 0 50px 0 25px;
+}
+
+main .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: .5rem 0;
 }
 
 main .container .text{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    width: 55vw;
+    flex-direction: column;
 }
 
 main .container .news p,
@@ -72,22 +89,21 @@ main .container #plantas p,
 main .container #galeria p,
 main .container #dobem p{
     padding: 0px 20px;
-    align-self: center;
 }
 
 main .container .news img{
-    width: 25vw;
+    width: 40vw;
 }
 
-main #mapa{
-    display: flex;
-    align-items: flex-start;
+main .container #mapa{
+    padding: 5px 0;
 }
 
-main .car,
-main .tp{
-    padding: 0 12px;
+main .container #mapa .text,
+main .container #mapa .map{
+    width: 47vw;
 }
+
 
 /* FOOTER */
 
