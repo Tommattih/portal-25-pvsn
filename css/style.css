@@ -1,5 +1,13 @@
 /* ESTILOS GERAIS */
 /* html, body, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main */
+:root{
+    --bg: #455943;
+    --title: #e8beac;
+    --section: #fff;
+    --text: ;
+    --shaddow: #000;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +15,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden; /*my bff*/
 }
 
 
@@ -18,12 +27,12 @@ header .topo img{
 }
 
 h1{
-    background-color: #455943;
-    color: #e8beac;
-    text-shadow: 1px -1px 5px #000000b8;
+    background-color: var(--bg);
+    color: var(--title);
+    text-shadow: 1px -1px 5px var(--shaddow);
     margin: -5px -10px -5px -5px;
     text-align: center;
-    padding: 30px 0 0px;
+    padding: 15px 0 5px 0px;
     -webkit-text-emphasis-position: under;
     -webkit-text-emphasis-style: triangle;
 }
@@ -33,6 +42,12 @@ h1{
     bottom: 20px;
     right: 20px;
     width: 2.5rem;
+    transition: filter .2s;
+}
+
+.button a:hover{
+    filter: brightness(1.1);
+    transform: scale(1.2)
 }
 
 header nav ul{
@@ -45,7 +60,14 @@ header nav ul{
 }
 
 header .bloco ul li img{
+    transition: .7s;
     max-width: 12vh;
+}
+
+header .bloco ul li img:hover,
+footer nav .redes-sociais li a:hover img{
+    filter: brightness(1.2);
+    transform: scale(1.2);
 }
 
 header .bloco nav p{
@@ -59,12 +81,12 @@ header .bloco nav p{
 
 main .container,
 main h3{
-    padding: 5px 20px;
+    padding: 0 20px;
 }
 
 main .container h2{
     background-color: #455943;
-    color: #fff;
+    color: var(--section);
     padding: 5px 10px;
     border-radius: 0 50px 0 25px;
 }
@@ -92,7 +114,7 @@ main .container #dobem p{
 }
 
 main .container .news img{
-    width: 40vw;
+    width: 35vw;
 }
 
 main .container #mapa{
@@ -108,8 +130,8 @@ main .container #mapa .map{
 /* FOOTER */
 
 footer{
-    background-color: #455943;
-    color: #e8beac;
+    background-color: var(--bg);
+    color: var(--title);
 }
 
 footer .container figure img{
@@ -130,11 +152,14 @@ footer nav .redes-sociais{
 }
 
 footer nav .redes-sociais li{
-    margin: 10px 20px;
+    padding: 15px;
 }
 
-footer nav .redes-sociais li a{
-    color: var(--corDoMeio);
+footer nav .redes-sociais li a,
+footer nav .info-contato li a,
+footer nav .info-contato li{
+    /* color: var(--title); */
+    color: var(--section);
 }
 
 footer nav .redes-sociais li a img{
@@ -142,9 +167,10 @@ footer nav .redes-sociais li a img{
     transition: .4s;
 }
 
-footer nav .redes-sociais li a:hover img{
-    transform: scale(1.2) translateY(-10px);
-}
+/* footer nav .redes-sociais li a:hover img{
+    filter: brightness(1.2);
+    transform: scale(1.2);
+} */
 
 footer nav .info-contato li{
     padding: 5px;
@@ -155,6 +181,5 @@ footer nav .info-contato li{
 
 footer nav .info-contato li a{
     font-size: 1rem;
-    color: var(--corD);
     text-align: center;
 }
