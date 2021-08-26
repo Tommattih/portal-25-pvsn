@@ -23,11 +23,11 @@
 
 h1{
     background-color: var(--bg);
-    font-size: 1.8rem;
     color: var(--title);
+    font-size: 1.3rem;
     text-shadow: 1px -1px 5px var(--shaddow);
     text-align: center;
-    padding: 15px 10px 5px;
+    padding: 15px 5px 5px;
     -webkit-text-emphasis-position: under;
     -webkit-text-emphasis-style: triangle;
 }
@@ -126,7 +126,7 @@ main .container #mapa{
 }
 
 main .container #mapa .map iframe{
-    max-width: 92vw;
+    max-width: 95vw;
 }
 
 main .container #mapa .text, 
@@ -168,9 +168,13 @@ footer nav .redes-sociais li a{
     align-items: center;
 }
 
+footer nav .redes-sociais li p{
+    padding: 0 10px;
+}
+
 footer nav .info-contato li a,
 footer nav .info-contato li{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--section);
     text-align: left;
     padding: 5px 0;
@@ -181,10 +185,11 @@ footer nav .redes-sociais li a img{
     transition: .4s;
 }
 
-footer nav .redes-sociais li a p{
-    padding: 0 10px;
+footer .info-contato p{
+    margin: 0 10px;
+    padding: 2px 0px;
+    overflow-y: hidden;
 }
-
 
 
 /* @MEDIA */
@@ -192,6 +197,10 @@ footer nav .redes-sociais li a p{
 @media only screen and (min-width:768px){
     
     /* HEADER */
+    h1{
+        font-size: 1.8rem;
+        padding: 15px 10px 5px;
+    }
 
     header .bloco ul li img {
         max-width: 5vw;
@@ -246,23 +255,19 @@ footer nav .redes-sociais li a p{
     
     /* FOOTER */
 
-    footer nav .info-contato li p{
-        overflow-y: hidden;
-    }
-
     footer nav .redes-sociais {
         display: flex;
         flex-direction: row;
         align-items: center;
         align-items: baseline;
     }
-
+    
     footer nav .info-contato li a,
     footer nav .info-contato li{
         text-align: center;
-        font-size: 1rem;
+        font-size: .9rem;
     }
-    
+        
     footer nav .redes-sociais li a{
         text-align: center;
         display: flex;
