@@ -21,7 +21,8 @@
 
 - Cor de fundo
 
-- Adição de imagens, notícias e links
+- Adição de imagens, notícias, links e contador
+
 
 **Referência**
 
