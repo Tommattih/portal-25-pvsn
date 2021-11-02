@@ -187,6 +187,14 @@ footer .info-contato{
     padding: .8rem 0 0;
 }
 
+.counter-text{
+    text-align: center;
+}
+
+.counter {
+    overflow: hidden;
+}
+
 footer .info-contato p{
     margin: 0 10px;
     line-height: 15px;
