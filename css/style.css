@@ -184,7 +184,7 @@ footer nav .redes-sociais li a img{
 }
 
 footer .info-contato{
-    padding: .8rem 0 0;
+    padding: .8rem 0;
 }
 
 .counter-text{
@@ -237,7 +237,7 @@ footer .info-contato p{
     
     main .container,
     main h3{
-        padding: 5px 15px 5px;
+        padding: 5px 10px 5px;
     }
     
     main .container .news p,
@@ -245,11 +245,17 @@ footer .info-contato p{
     main .container #plantas p,
     main .container #galeria p,
     main .container #dobem p{
-        padding: 0px 20px 5px;
+        padding: 0px 10px 5px;
+        line-break: auto;
     }
-    
-    main .container .news img {
-        max-width: 40vw;
+
+    main .container .news .box ul,
+    main .container .news .box article,
+    main .container .news img,
+    main .container .text,
+    main #historia article,
+    main .preview{
+        max-width: 46vw;
     }
     
     main .box{
@@ -258,24 +264,15 @@ footer .info-contato p{
         justify-content: space-around;
         padding: .5rem 0;
     }
-    
-    main .container .text{
-        width: 50vw;
-    }
-    
+
     main #historia .box{
         display: flex;
     }
     
-    main #historia article{
-        width: 45vw;
-    }
-
     main #plantas .box {
         width: 100vw;    
-        display: flex;
-        justify-content: space-between;
     }
+
     #galeria .instagram{
         display: flex;
     }
@@ -290,10 +287,6 @@ footer .info-contato p{
         max-width: 45vw;
     }
     
-    main .preview{
-        max-width: 70vh;
-    }
-        
     .button{
         bottom: 1rem;
         right: 1rem;
@@ -326,6 +319,5 @@ footer .info-contato p{
         transition: .4s;
         margin: 5px;
     }
-    
     
 }
