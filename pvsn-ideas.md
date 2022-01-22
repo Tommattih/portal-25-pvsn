@@ -178,7 +178,11 @@ Continuando a analogia entre corpo e casa, podemos dizer que as paredes e lage f
 Ela pode ser executada com diversos tipos de materiais, de acordo com o orçamento, necessidade e tipo de projeto, como por exemplo:
 
 ---
+## Do Bem
+>https://ecotelhado.com/veja-a-diferenca-entre-arquitetura-ecologica-e-sustentavel/#:~:text=Esse%20tipo%20de%20arquitetura%20conta,e%20sistemas%20de%20energia%20e%C3%B3lica.
+---
 ##Infos da associação sobre burocracia
 abert. ruas final segundo semestre de 2020
 aprox dez/2020
 
+---
