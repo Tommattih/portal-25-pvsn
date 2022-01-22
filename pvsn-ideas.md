@@ -38,9 +38,8 @@
 
 #### CRIAR BRANCHES PARA:
 
-- [x] **=> NOTÍCIAS (informes da ATST/Acontecimentos no loteamento)** (atst-news)
-  Infos da associação sobre burocracia:
-  - abertura de ruas, final 2º semestre/2020 (aprox dez/2020)
+- [x] **=> NOTÍCIAS (ATST)** (atst-news)
+  Infos da área pela associação sobre burocracia, avisos e resumos de reunião
 
 - [x] **=> ARTIGOS**
    * Dicas de Construção
@@ -55,7 +54,7 @@
   * MENU DE BUSCA
 
 - [ ] ***=> DÚVIDAS*** (faq/other repo)
-* AREA DE LOGIN DOS MORADORES
+  * AREA DE LOGIN DOS MORADORES~?~
 
 - [ ] ***=> PAINEL DE SERVIÇOS***
    * FILTROS & SEÇÕES: (complete info only for back-end)
