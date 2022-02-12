@@ -28,9 +28,11 @@
 
 - [ ] Destacar redes sociais
 
-- [ ] Criar uma Logo Name personalizada .PNG ~ ~talvez~
+- [x] Criar uma Logo Name personalizada .PNG ~ ~falta aplicar~
 
 - [ ] Considerar um menu dopdown usando as imagens como "capa" das seções
+
+-[ ] Menu de navegação fixo, que muda de forma quando escrollado, icones com texto viram botões
 
 - [ ] Substituir preview do *Instagram* por uma galeria que redirecione para ele
 
