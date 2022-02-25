@@ -21,15 +21,34 @@
 
 
 /* HEADER */
+header .simbol {
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: auto;
+    background-color: var(--bg);
+}
 
-header .container h2,
+header .simbol .logo-txt, 
+header .simbol .logo-map{
+    position: absolute;
+    width: 10rem;
+}
+
+header .simbol .round {
+    width: 14rem;
+}
+
+header .title h2,
 h1{
     background-color: var(--bg);
     color: var(--title);
     font-size: 1.3rem;
     text-shadow: 1px -1px 5px var(--shaddow);
     text-align: center;
-    padding: 15px 5px 5px;
+    padding-bottom: 0.5rem;
     -webkit-text-emphasis-position: under;
     -webkit-text-emphasis-style: triangle;
 }
@@ -37,7 +56,7 @@ h1{
 header p,
 main p{
     color: var(--text);
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .button{
@@ -56,24 +75,24 @@ header nav ul{
     text-align: center;
 }
 
-header .bloco ul li img{
+header .menu ul li img{
     max-width: 10vw;
     margin: 0 20px;
 }
 
-header .bloco .breve img{
+header .menu .breve img{
     filter: grayscale(1);
 }
 
-header .bloco .breve img:hover{
+header .menu .breve img:hover{
     transform: none;
     filter: grayscale(1);
     cursor: wait;
 }
 
 nav > a{
-    font-size: .9rem;
-    transition: .8s;
+    font-size: 1rem;
+    transition: .6s;
 }
 
 nav a:hover{
@@ -212,7 +231,7 @@ footer .info-contato p{
     }
 
     
-    header .bloco ul li img {
+    header .menu ul li img {
         max-width: 5vw;
         transition: .7s;
     }
@@ -222,11 +241,11 @@ footer .info-contato p{
     }
     
     
-    header .bloco ul li img:hover,
+    header .menu ul li img:hover,
     footer nav .redes-sociais li a:hover img,
     .button a:hover{
-        filter: brightness(1.2);
-        transform: scale(1.2);
+        filter: brightness(1.16);
+        transform: scale(1.04);
     }
     
     /* MAIN */
