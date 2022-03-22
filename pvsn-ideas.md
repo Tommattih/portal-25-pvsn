@@ -1,4 +1,5 @@
 ### Correções
+- [ ] Separar CSS do mobile e do desktop
 
 - [ ] Inserir um preloader preventivo
 
