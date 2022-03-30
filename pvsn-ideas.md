@@ -3,8 +3,6 @@
 
 - [ ] **= Separar CSS do mobile e do desktop =**
 
-- [ ] Usar **glassmorfism** nos `:hover`
-
 - [ ] Usar mapeamento no html para a navegação das quadras;
 
 - [ ] Trocar imagens de .SVG para .PNG otimizadas
@@ -37,11 +35,11 @@
 
 - [ ] Considerar um menu dopdown usando as imagens como "capa" das seções
 
--[ ] Menu de navegação fixo, que muda de forma quando escrollado, icones com texto viram botões
+- [ ] Menu de navegação fixo, que muda de forma quando escrollado, icones com texto viram botões
 
 - [ ] Substituir preview do *Instagram* por uma galeria que redirecione para ele
 
-- [ ] Aplicar glassmorfism CSS para os cards das quadras '{
+- [ ] Aplicar **glassmorfism** no CSS dos `:hover` para os cards das quadras '{
   background: rgba( 0, 200, 12, 0.1 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 0.5px );
