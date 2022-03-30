@@ -3,7 +3,9 @@
 
 - [ ] **= Separar CSS do mobile e do desktop =**
 
-- [ ] Inserir um preloader preventivo
+- [ ] Usar **glassmorfism** nos `:hover`
+
+- [ ] Usar mapeamento no html para a navegação das quadras;
 
 - [ ] Trocar imagens de .SVG para .PNG otimizadas
 
