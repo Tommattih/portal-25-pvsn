@@ -9,19 +9,17 @@
 
 - [ ] **Aumentar** `font-size` para ambas as telas
 
-- [ ] Melhorar distribuição e **espaçamento** de conteúdo
+- [x] Melhorar distribuição e **espaçamento** de conteúdo
 
 - [ ] Inserir um preloader preventivo [open door]
 
-- [ ] Trocar imagens de .SVG para .PNG otimizadas
+- [x] Trocar imagens de .SVG para .PNG otimizadas
 
 - [ ] Aumentar `font-size` da versão desktop
 
-- [ ] Melhorar distribuição e espaçamento de conteúdo
-
 - [ ] Talvez criar uma ocultação de seção em JS com *"Leia mais"*
 
-- [ ] Fazer um `@keyframe` no header com imagens do drone
+- [ ] Fazer um `@keyframe` no header com imagens do drone ~talvez~
 
 - [ ] Animar a imagem da seção *"Do bem"*
 
@@ -29,13 +27,13 @@
 
 - [ ] Completar as informações técnicas e burocráticas
 
-- [ ] Destacar redes sociais
+- [x] Destacar redes sociais
 
 - [x] Criar uma Logo Name personalizada .PNG ~ ~falta aplicar~
 
-- [ ] Considerar um menu dopdown usando as imagens como "capa" das seções
+- [x] Considerar um menu dopdown usando as imagens como "capa" das seções
 
-- [ ] Menu de navegação fixo, que muda de forma quando escrollado, icones com texto viram botões
+- [x] Menu de navegação fixo, que muda de forma quando escrollado, icones com texto viram botões
 
 - [ ] Substituir preview do *Instagram* por uma galeria que redirecione para ele
 

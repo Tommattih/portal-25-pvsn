@@ -1,4 +1,16 @@
 ## Portal 25ª PVSN -> [tommattih.github.io/portal-25-pvsn](https://tommattih.github.io/portal-25-pvsn)
+### Versão Abril/2022
+`root:{
+    --bg-h1: #;
+    --bg-header:#;
+    --bg-title:#;
+    --bg-container:#;
+    --tex-title:#;
+    --txt-header: #3A4315;
+    --txt-light: #;
+    --txt-dark: #;
+    }`
+
 
 **Cores da Página**
 
