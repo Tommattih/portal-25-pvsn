@@ -1,0 +1,176 @@
+/* === MOBILE ===*/
+
+/* CORES */
+:root {
+  --bg-h1: #000;
+  --bg-header: #000;
+  --bg-title: #000;
+  --bg-container: #000;
+  --tex-title: #000;
+  --txt-header: #3A4315;
+  --txt-light: #000;
+  --txt-dark: #000;
+  --shaddow: 4px -4px 8px solid rgba(0, 0, 0, .4);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* PRELOADER*/
+/* até max 430px */
+#preloader .hidden {
+  display: none;
+  visibility: hidden;
+}
+
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-size: cover;
+  background-color: #3a4315;
+  background-image: url("../_img/bgs-logo/bg-solo-start-mobile.png");
+  z-index: 1;
+}
+
+#preloader span img.border {
+  position: absolute;
+  width: 100vw;
+  padding: 9rem 0;
+  z-index: 2;
+}
+
+#preloader span img.center {
+  position: absolute;
+  width: 100vw;
+  padding: 12rem 3rem;
+  z-index: 3;
+}
+
+/* NAVEGAÇÃO */
+
+.header-mobile {
+  display: inline-flex;
+  width: 100vw;
+  height: 5rem;
+  background-color: rgba(58, 67, 21, .8);
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 0.2rem solid rgba(0, 0, 0, .2);
+}
+
+.header-mobile .button-menu {
+  padding-left: 1rem;
+}
+
+.social-media {
+  display: inline-flex;
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+
+.social-media li img {
+  width: 2rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, .2);
+
+}
+
+/* MENU */
+#menu {
+  background-image: url("../_img/bgs-logo/bg-solo-menu-mobile.png");
+  background-color: #ddd;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  background-size: cover;
+}
+
+span.close {
+  text-align: end;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, .4);
+}
+
+#menu #title {
+  margin-top: 1rem;
+}
+
+#menu .logo img {
+  display: flex;
+  width: 5rem;
+  align-content: center;
+  padding: 2rem 0 1rem 0;
+  margin: 0 auto;
+}
+
+#menu h1,
+#menu h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+#menu h2 {
+  font-size: 1rem;
+  border-bottom: .15rem solid #fff;
+  padding: 1rem 2rem 2.5rem;
+}
+
+#menu ul#buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  height: 100vh;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+#menu ul#buttons li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, .3);
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+#menu ul#buttons li a p {
+  padding-top: .2rem;
+  color: #fff;
+}
+
+button.mode-mobile {
+  display: inline;
+  margin: 0;
+}
+
+#menu ul#buttons li a img {
+  width: 4rem;
+}
+
+
+/* COLOR MODE */
+.mode {
+  display: none;
+}
+
+/* HOME */
+
+/* ASIDE */
+
+/* CONTAINER */
+
+/* FOOTER */

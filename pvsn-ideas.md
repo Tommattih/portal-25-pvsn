@@ -1,11 +1,11 @@
-### Correções
+### Modificações
 - [ ] **modificar** a exibição de **author** linkando pro portifólio 
 
 - [ ] **= Separar CSS do mobile e do desktop =**
 
 - [ ] Usar mapeamento no html para a navegação das quadras;
 
-- [ ] Trocar imagens de .SVG para .PNG otimizadas
+- [x] Trocar imagens de .SVG para .PNG otimizadas
 
 - [ ] **Aumentar** `font-size` para ambas as telas
 
@@ -17,7 +17,7 @@
 
 - [ ] Aumentar `font-size` da versão desktop
 
-- [ ] Talvez criar uma ocultação de seção em JS com *"Leia mais"*
+- [ ] Talvez criar uma ocultação de seção em JS com *"Leia mais"* / *"Continuar lendo..."*
 
 - [ ] Fazer um `@keyframe` no header com imagens do drone ~talvez~
 

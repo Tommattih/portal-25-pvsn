@@ -1,461 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="bbPU3z2XnrKyz1ePvdFmOyxYy-qIXn4BpaNsAPoe8Vk" /> <!-- Indexação por tag do Google Search Console -->
+    <meta name="google-site-verification" content="bbPU3z2XnrKyz1ePvdFmOyxYy-qIXn4BpaNsAPoe8Vk" />
 
-    <title>25ª Área - PVSN</title>
+    <title>Portal PVSN (25ª)</title>
 
-    <link rel="shortcut icon" href="./img/icon-PVSN.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- FONTES -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./_css/mobile.css">
+    <link rel="stylesheet" href="./_css/desktop.css">
     
-    <!-- mais afinada, sofisticado em italico? -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <script src="./_js/script.js"></script>
 </head>
-<body>
-        <!-- Bloco fixo topo -->
-    <header>
+<body onload="preload();">
+    <div id="preloader" class="">
+        <span >
+            <img src="./_img/bgs-logo/ico-pvsn-25-text-start-mobile.png" class="border" alt="circulo preto com a planta do loteamento ao centro e sigla e número da área desfocado ao fundo">
+        </span>
         
+        <span>
+            <img src="./_img/bgs-logo/icon-PVSN-25-start-mobile.png"  class="center" alt="Parque Vitoria Do Sol Nascente escrito em forma circular">
+        </span>
+    </div>
 
-
-        <div class="title">
-            <!-- imagens passando script-->
-            <h1>Portal PVSN</h1>
-            <h2>Parque Vitória do Sol Nascente</h2>
-            
-            <div class="simbol">
-                <span class="halo">
-                    <img src="./img/round-text.png" alt="" class="round">
-                </span>
-                <img src="./img/icon-PVSN-25-map-front.png" alt="" class="logo-map">
-                <img src="./img/icon-PVSN-25-text-front.png" alt="" class="logo-txt">
-            </div>
-
+    <header>
+        <!-- ONLY MOBILE -->
+        <div class="header-mobile">
+            <img src="./_img/buttons/button-menu.png" class="button-menu" alt="icone PVSN 25">
+            <ul class="social-media">
+                <li><a href="" target="blank"><img src="./_img/icons/ico-facebook.png" alt="botão para Portal PVSN no facebook"></a></li>
+                <li><a href="" target="blank"><img src="./_img/icons/ico-instagram.png" alt="botão para Portal PVSN no instagram"></a></li>
+                <li><a href="" target="blank"><img src="./_img/icons/ico-whatsapp.png" alt="botão para grupo no whatsapp"></a></li>
+                <li><a href="" target="blank"><img src="./_img/icons/ico-discord.png" alt="botão para Portal PVSN no discord"></a></li>
+            </ul>
         </div>
-                
-        <div class="menu" id="topo">
+            
+        <div id="menu" class="">
+            <span class="close mobile" onclick="close()">X</span>
+            <div class="logo mobile">
+                <img src="./_img/buttons/ico-pvsn-25-mobile-menu.png" alt="">
+            </div>
+            
+            <!-- GERAL -->
+            <div id="title">
+                <h1 id="loteamento">Parque Vitória do Sol Nascente</h1>
+                <h2 id="portal-25">Portal da 25ª área</h2>
+            </div>
+                    
             <nav>
-                <ul>
-                    <li>
-                        <abbr title="Conheça a trajetória dessa terra!">
-                            <a href="#historia">
-                                <img src="./img/history.png" alt="história">
-                                <p>História</p>                   
-                            </a>
-                        </abbr> 
-                    </li>
-                                    
-                        
-                    <li>
-                        <abbr title="Projetos, plantas e esboços!">
-                            <a href="#plantas">
-                                <img src="./img/plants.png" alt="Planta geral">
-                                <p>Plantas</p>
-                            </a>
-                        </abbr>
-                    </li>
-                        
-                    <li>
-                        <abbr title="Imagens do nascimento de um bairro!">
-                            <a href="#galeria">
-                                <img src="./img/pictures.png" alt="Imagens e vídeos">
-                                <p>Galeria</p>
-                            </a>
-                        </abbr>
-                    </li>
-                        
-                    <li>
-                        <abbr title="Saiba como chegar!">
-                            <a href="#mapa">
-                                <img src="./img/maps.png" alt="Mapa do Google">
-                                <p>Localização</p>
-                            </a>
-                        </abbr>
-                    </li>
-
-                    <li>
-                        <abbr title="Sustentabilidade e Bem-estar">
-                            <a href="#dobem">
-                                <img src="./img/doBem.png" alt="Sustentabilidade">
-                                <p>Do Bem</p>
-                            </a>
-                        </abbr>
-                    </li>
-
-                    <li class="breve">
-                        <abbr title="Contrate um vizinho especialista">
-                            <a href="#">
-                                <img src="./img/services.png" alt="Serviços locais">
-                                <p>Serviços</p>
-                            </a>
-                        </abbr>
-                    </li>
-                        
-                    <li class="breve">
-                        <abbr title="Perguntas frequentes">
-                            <a href="#">
-                                <!-- colocar uma classe nas imagens do menu para remover e ocultar sem o hover -->
-                                <img src="./img/faq.png" alt="Dúvidas frequentes">
-                                <p>Dúvidas</p>
-                            </a>
-                        </abbr>
-                    </li>
-                        
+                <ul id="buttons">
+                    <li><a href="./news.html"><img src="./_img/icons/header/ico-news.png" alt=""><p>Notícias</p></a></li>
+                    <li><a href="./services.html"><img src="./_img/icons/header/ico-services.png" alt=""><p>Serviços</p></a></li>
+                    <li><a href="./faq.html"><img src="./_img/icons/header/ico-faq.png" alt=""><p>Dúvidas</p></a></li>
+                    <li><a href="./enviroment.html"><img src="./_img/icons/header/ico-planet.png" alt=""><p>Do Bem</p></a></li>
+                    <li><a href="./galery.html"><img src="./_img/icons/header/ico-galery.png" alt=""><p>Galeria</p></a></li>
+                    <li><a href="./history.html"><img src="./_img/icons/header/ico-history.png" alt=""><p>História</p></a></li>
+                    <li><a href="./blueprints.html"><img src="./_img/icons/header/ico-plan.png" alt=""><p>Planta</p></a></li>
+                    <li><a href="./maps.html"><img src="./_img/icons/header/ico-map.png" alt=""><p>Rotas</p></a></li>
+                    <li class="toggle-theme mobile"><a onclick="open()" class="mode-mobile"><img src="./_img/icons/header/button-togle-mode.png" alt=""><p>Modo</p></a></li>
                 </ul>
             </nav>
         </div>
-</header>
-
-<main>
-    <div class="container">
-            <section class="news">
-                <h2>Últimas notícias e Reuniões</h2>
-                <div class="box">
-                    <article>
-                        <h3>Resumo da reunião - *10/12/2021</h3>
-                        <div class="text">
-                            <ul>
-                                <li>
-                                    <p> &RightArrow; O loteamento finalmente está <strong>liberado para construção</strong>.</p>
-                                </li>
-
-                                <li>
-                                    <p>&RightArrow; .</p>
-                                </li>
-
-                                <li>
-                                    <p>&RightArrow; .</p>
-                                </li>
-
-                                <li>
-                                    <p>&RightArrow; .</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-                    
-                <div class="box">
-                    <article>
-                        <h3>Resumo da reunião - 03/11/2021</h3>
-                        <div class="text">
-                            <ul>
-                                <li>
-                                    <p> &RightArrow; Foi apresentado um breve histórico dos processos e aprovações que a área passou nos últimos anos.</p>
-                                </li>
-
-                                <li>
-                                    <p>&RightArrow; Após ajustes, o pedido de aprovação (referente a área de construção pré-aprovada dentro dos lotes)já foi enviado para a prefeitura, esta é a <strong>última etapa</strong> para liberar as obras, retorno em aproximadamente 15 dias.</p>
-                                </li>
-
-                                <li>
-                                    <p>&RightArrow; Para receber um trecho experimental de asfalto ecológico (imediações das quadras A19, A21 e A22) os serviços da Sabesp foram adiantados na área.</p>
-                                </li>
-
-                                <li>
-                                    <p>&RightArrow; A oficialização das ruas saiu em 4 de Setembro (Portaria nº 57/2021/SMUL.G) e com ela, foi feita a solicitação dos CEP's aos Correios.</p>
-                                </li>
-
-                                <li>
-                                    <p>&RightArrow; <strong>Plantão dos Arquitetos:</strong> Agendamentos para fazer as plantas estão sendo realizados às sexta-feiras das 8h até às 18h na sede da Associação. Caso o associado não esteja com as contribuições em dia, não poderá usufruir deste serviço, tendo que contratar um arquiteto/engenheiro no particular para elaborar a planta para o seu lote.</p>
-                                </li>
-                                
-                                <li>
-                                    <p>&RightArrow; A presença foi marcada por meio de um, acessando o link era só preencher com nome, data de nascimento, endereço e telefone para contato, assim como nas costumeiras filipetas das reuniões presenciais.</p>
-                                </li>
-
-                                <li>
-                                    <figure>
-                                        <img src="./img/Experimental.svg" alt="Demarcação do trecho que receberá o asfalto ecológico">
-                                        <figcaption>Trecho onde será feito o asfalto ecológico</figcaption>
-                                    </figure>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    
-                    <article>
-                        <a href="https://youtu.be/lJK0tPM8nKQ?t=691" target="_blank">
-                            <abbr title="Assista a reunião no Youtube">
-                                <img src="./img/meeting.svg" alt="Aviso de uma nova reunião online 03 de novembro ás 18h30 no canal da ATST no youtube">
-                            </abbr>
-                        </a>
-                        <h3>Resumo da reunião - 21/08</h3>
-                        <div class="text">
-                            <p>- A <strong>SABESP irá operar no loteamento</strong>, possivelmente, em meados de Outubro. No momento desta reunião está concluindo os serviços na 28ª área, a seguir irá para a 26ª e, e depois, virá a 25ª área.</p>
-
-                            <p>- Para <strong>quem ainda não fez a retirada de terra</strong>, o custo da operação provavelmente se elevará se tiver que despachar a terra excedende fora do loteamento. A Associação não indica nenhuma companhia, cada um está por conta para cotar os preços. Os vizinhos que quiserem se unir para buscar desconto com as empresas de terraplenagem podem conversar pelo grupo do whatsapp (Link aqui no final da página)</p>
-
-                            <p>- <strong>Recur$os para obras de infraestrutura</strong> subsequentes, virão da Secretaria de Habitação do Estado.</p>
-
-                            <p>- A partir do dia 23/08/2021 (de segunda-feira a sexta-feira, <strong>das 09:00 às 18:00</strong>), os associados que estiverem com as contribuições em dia, podem ir até a sede da Associação e fazer a ficha de atendimento, que funciona como senha, para (por meio de ligação ou whataspp) agendarem a data da elaboração da planta indiviual. O projeto será elaborado junto com o(a) arquiteto(a) no próprio terreno no loteamento. <strong>Ou seja</strong>, é necesssário estar quitado para pegar o protocolo, a partir do qual eles entrarão em contato pra agendar o dia pra comparecer no lote e estudar as opções de planta</p>
-                        </div>
-                    </article>
-                </div>
-
-            </section>
-            
-            <section id="historia">
-                <h2>História - Como tudo começou</h2>
-
-                <div class="box">
-                    <article>
-                        <h3>Movimento por moradia</h3>
-                        <p>A Associação dos Trabalhadores Sem Terra (ATST) faz a ponte entre famílias com recurso financeiro limitado e a conquista da terra própria, entre outras atividades de benefício social.</p>
-                        <p>Primeira reunião da 25ª área na ATST (data)</p>
-
-                        <h3>Negociação de terras</h3>
-                        <p>Família Sbrighi (data)a(data)</p>
-                        <p>Família X (data)a(data)</p>
-
-                        <h3>Aprovação da planta geral do loteamento</h3>
-                        <p>...(data)</p>
-
-                        <h3>Aprovação da CETESB</h3>
-                        <p>Nascentes e curso dágua</p>
-                        <p>Árvores em extinção encontradas: Araucárias</p>
-                        <p>Biomas da área: Mata atlântica e trecho de serrado</p>
-                        <p>Acordo de compensação ambiental(data)</p>
-                        <p>...(data)</p>
-
-                        <h3>Aprovação da Prefeitura</h3>
-                        <p>Lista de documentos e órgaos envolvidos</p>
-                        <p>...(data)</p>
-
-                        <h3>Liberação para retirada de terra</h3>
-                        <p>1º Semestre/2021</p>
-
-                        <h3>Abertura de ruas e Marcação dos lotes</h3>
-                        <p>... (data)</p>
-
-                        <h3>Eletricidade</h3>
-                        <p>...</p>
-                        
-                        <h3>Liberação para construção</h3>
-                        <p>...</p>
-                        
-                        <h3>Asfalto</h3>
-                        <p>...</p>
-                        
-                        <h3>Relatos</h3>
-                        <p>...</p>
-
-                        <h3>Água e esgoto</h3>
-                        <p>Ínicio das medições - Setembro/2021</p>
-                        <p>Início das obras - Outubro/2021</p>
-                    </article>
-
-                    <article>
-                        <h3>Nomeação das ruas</h3>
-                        <p>Portaria nº 57/2021/SMUL.G públicada no dia 4 de Setembro de 2021 no Diário Oficial da Cidade de São Paulo<a href="https://www.alertadiario.com.br/publication_pages/4e48c-diario-oficial-de-sao-paulo-caderno-cidade-2021-09-04-pg-23
-                    " target="_blank"> (Veja a página na íntegra)</a></p>
-
-                        <img class="preview" src="./img/Portaria.svg" alt="Delimitação e nomes das ruas">
-                    </article>
-                </div>
-                    
-                <div class="box">
-                    
-                    <article>
-                        <img src="./img/sabesptube.svg" alt="Máquinas e tubos da SABESP">
-                    </article>
-                        
-                    <article>
-                        <figure>
-                            <img src="./img/sabesp.svg" alt="Instalação de saneamento da SABESP">
-                            <figcaption>Trabalho da SABESP em andamento<figcaption>
-                        </figure>
-                    </article>
-                            
-                </div>
-                    
-            </section>
-
-            <section id="plantas">
-                <h2>Plantas</h2>
-                <div class="box">
-                    <article>
-                        <h3>Visão geral</h3>
-                        <p>Divisão das quadras, ruas e lotes
-                            <a href="https://drive.google.com/file/d/1wL5JUv5JAPpUlpp-GnHNbZOoNuwSLM2y/view?usp=sharing" download="PlantaDoLoteamentoPVSN" alt="link para download da planta completa em PDF" target="_blank"> (Visualizar PDF)</p>
-                        
-                                <img class="preview" src="./img/PlantaLightPVSN.svg" alt="Planta geral do loteamento">
-                            </a>
-                        
-                                
-                    </article>
-
-                    <article>
-                        <h3>Ruas e arredores</h3>
-                        <p>Delimitação estimada das ruas
-                            <a href="https://drive.google.com/file/d/1lHwLix3QFvup7qz5IQ5og_p8BoiybZCH/view?usp=sharing" download="RuasLoteamentoPVSN(PDF)" alt="link para download do traçado das ruas em PDF" target="_blank"> (Visualizar PDF)</a>
-                        </p>
-
-                            <img class="preview" src="./img/RuasLoteamentoPVSN.svg" alt="Traçado de delimitação estimado das ruas do loteamento">
-                    </article>
-
-                </div>
-                
-                <h3>Quadras</h3>
-                <p>Visualização detalhada quadra a quadra</p>
-                <p>...</p>
-            </section>
-
-            <section id="galeria">
-                <h2>Galeria</h2> <!--scripts-->
-                <p>Compilado de imagens enviadas pelos vizinhos da área</p>
-                <!-- <div class="instagram"> -->
-                <div class="box">
-                    <article>
-                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CVwweR1MgZI/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CVwweR1MgZI/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver essa foto no Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CVwweR1MgZI/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Uma publicação compartilhada por Parque Vitória do Sol Nascente (@pvsn.25)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
-                    </article>
-                    
-                    <article>
-                        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CVuJ2ckghfJ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CVuJ2ckghfJ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver essa foto no Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CVuJ2ckghfJ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Uma publicação compartilhada por Parque Vitória do Sol Nascente (@pvsn.25)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
-                    </article>
-                </div>
-
-                <!-- <div class="quadras">
-                    <h3>Quadras</h3>
-                    <img src="" alt=""> +40*
-                    <p>...</p>
-                </div> -->
-            </section>
-
-            <section id="mapa">
-                <h2>Como chegar</h2>
-                
-                <div class="box">
-                    <article>
-                        <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1787.8994050230262!2d-46.778048990577396!3d-23.4400447481186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefcf9ff046bed%3A0xbba599a8eb55ab4!2sAlameda%20Aristotenes%20Claudio%20Sbrigh%2C%20923%20-%20Vila%20Jaragu%C3%A1%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005282-000!5e1!3m2!1spt-BR!2sbr!4v1622959672281!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        </div>
-                    </article>
-                
-                    <article>
-                        <div class="text">
-                            <h3>Pontos de referência</h3>
-                            <p>SP-021, Rodoanel Mario Covas</p>
-                            <p>Cemitério do Jaraguá</p>
-                            <p>BR-050, Parque São Domingos</p>                
-                            <p>KM-24, Rodovia Anhanguera</p>
-                            <p>Nas proximidades do Pico do Jaraguá</p>
-                            <p>Terminal Jardim Britânia</p>
-                            
-                            <h3>Transporte Público</h3>
-                            <p>Se você não tem carro, não tem problema, também é possível chegar de ônibus. </strong>Estas são algumas das opções mais próximas ao loteamento:</strong></p>
-                            <p><strong>-> </strong> Ponto de parada, Al. Aristóteles Claudio Sbrighi, 20 / Final</p>
-                            <p>Linha 8040-10 Lapa / Sol Nascente<a href="https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-line-8040_10-Sao_Paulo-242-10224-611285-0">(Detalhes)</a>.</p>
-                            <p>Linha 1019-10 Terminal Pirituba / Sol Nascente <a href="https://moovitapp.com/sao_paulo-242/lines/1019-10/577477/2253663/pt-br?customerId=4908&ref=2&poiType=line">(Detalhes)</a>.</p>
-                            
-                            <p><strong>Outras linhas nas proximidades</strong> <br><strong>-> </strong> Ponto de parada, BR-050, 1572 (+15min a pé)</p>
-                            <p>Linha 119L-10 Term. Lapa / Vl. Sulina <a href="https://moovitapp.com/sao_paulo-242/lines/119L-10/181322/4542097/pt-br?customerId=4908&ref=1&poiType=stop">(Detalhes)</a>.</p>
-                            <p>Linha 8013-10 Lapa / Term. Jardim Britânia <a href="https://moovitapp.com/sao_paulo-242/lines/8013-10/698434/2963017/pt-br?customerId=4908&ref=1&poiType=stop">(Detalhes)</a>.</p>
-                            <p>Linha 8050-10 Lapa / Pq. Morro Doce <a href="https://moovitapp.com/sao_paulo-242/lines/8050-10/182336/564298/pt-br?customerId=4908&ref=1&poiType=stop">(Detalhes)</a>.</p>
-                            <p>Linha 8050-31 Lapa / Pq. Morro Doce <a href="https://moovitapp.com/sao_paulo-242/lines/8050-31/25111644/4542057/pt-br?customerId=4908&ref=1&poiType=stop">(Detalhes)</a>.</p>
-                            <p>Linha 8055-10 Lapa / Perus <a href="https://moovitapp.com/sao_paulo-242/lines/8055-10/182340/564304/pt-br?customerId=4908&ref=1&poiType=stop">(Detalhes)</a>.</p>
-                            <p>Linha 8055-51 Metrô Barra Funda / Perus <a href="https://moovitapp.com/sao_paulo-242/lines/8055-51/505434/1893702/pt-br?customerId=4908&ref=1&poiType=stop">(Detalhes)</a>.</p>
-                            <p>Linha 8622-10 Pça. Ramos de Azevedo / Morro Doce <a href="https://moovitapp.com/sao_paulo-242/lines/8622-10/505490/1893799/pt-br?customerId=4908&ref=1&poiType=stop">(Detalhes)</a>.</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            
-            <section id="dobem"> 
-                <h2>Do bem - Sustentabilidade</h2>
-                <div class="box">
-                    <article>
-                        <div class="text">
-                            <h3>Ter um bairro modelo é possível</h3>
-                            <p>Todos nós sonhamos com uma vizinhança bonita, agradável, limpa e feliz.</p>
-                            <p><strong>Mas como isso pode ser possível na situação atual financeira do país?</strong> A resposta está na boa e velha <em>comunicação</em>.</p>
-                            <p>Existe no mercado da construção civil vários métodos construtivos mais eficientes e práticos do que a alvenaria convencional, como <em>Steal frame</em>, <em>Placas cimentícias</em> ou o robusto, leve e versátil <em><a href="https://www.youtube.com/watch?v=h5ldHzN-Lss&list=PLwvRgC3mvx5O5TAA4nDsGpRcZtQ7quV2J&index=24&t=727s">EPS</a></em>.</p> <!-- unir vídeos técnicos e informativos e trocar o link para uma playlist específica-->
-                            <p>Para decorar e dar um charme todo especial para sua casa, também é possível apostar em pomares e hortas em vasos, <em>jardins de inverno</em>, ou mesmo um <em>telhado verde</em> para agregar uma área permeável com estilo.</p>
-                            <p>Por último, mas não menos importante, com o crescente aumento das taxas cobradas pelas operadoras de energia elétrica, que tal optar por painéis fotovoltaicos? Sim, energia limpa, energia solar.</p>
-    
-                            <p>...</p>
-                        </div>
-                    </article>
-                    <article>
-                        <img src="./img/earth.svg" alt="sustentabilidade">
-                    </article>
-                </div>
-            </section>
-
-        <nav class="button">
-            <a href="#topo">
-                <abbr title="Voltar para o topo">
-                    <img src="./img/top-button.svg" alt="topo">
-                </abbr>
-            </a>
-        </nav>
-    </div>
-</main>
-
-    <footer>
-        <div class="container">
-            <nav>
-                <ul class="redes-sociais">
-
-                    <li>
-                        <a href="https://discord.gg/ABEhtET4dC" target="_blank">
-                            <img src="./img/discordWhite.svg" alt="Discord">
-                            <p>Discord</p>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="https://fb.me/PVSN.25" target="_blank">
-                            <img src="./img/facebookWhite.svg" alt="Facebook">
-                            <p>Facebook</p>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.instagram.com/pvsn.25/" target="_blank">
-                            <img src="./img/instagramWhite.svg" alt="Instagram">
-                            <p>Instagram</p>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://chat.whatsapp.com/K4JaFotEZSWC7EAtq2xn2y" target="_blank">
-                            <img src="./img/whatsappWhite.svg" alt="Whatsapp Link para o grupo geral">
-                            <p>Grupo Geral</p>
-                        </a>
-                    </li>
-                </ul>    
-
-            </nav>
-            <nav>
-                <ul class="info-contato">
-                    <li>
-                        <p class="counter-text">Contador de acessos
-                            <!-- <div class="counter" align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-cCwB4dcWCd58003d-26.gif' border='0' alt='contador gratuito'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=cCwB4dcWCd58003d'></script></div> -->
-                        </p>
-                    </li>
-            
-                    <li>
-                        <address> 
-                            <p>Criado por: Mateus T. Lins 
-
-                            <a href="mailto:tommattih@gmail.com" placeholder="email do desenvolvedor"> Email: tommattih@gmail.com</a></p>
-
-                            <p><a href="https://wa.me/qr/3MJV6HAAJ4DGK1" target="_blank" placeholder="Whatsapp do desenvolvedor"> Contato via Whatsapp</a> Osasco, SP - Brasil - 2021</p>
-
-                        </address>
-                    </li>
-                </ul>    
-            </nav>
+        
+        <!-- ONLY DESKTOP -->
+        <div class="mode">
+            <ul>
+                <li><img src="./_img/icons/header/button-sun.png" alt="botão de sol para visualizar em light-mode"></li>
+                <li><img src="./_img/icons/header/button-moon.png" alt="botão de lua para visualizar em dark-mode"></li>
+            </ul>
         </div>
-    </footer>
+
+
+    </header>
+    <div class="container">
+        <h1>selection</h1>
+    </div>
+    <!-- <header>
+        <h1 class="desktop">Parque Vitória do Sol Nascente</h1>
+    </header>
+    <main>
+        <div class="container desktop">
+            <aside>
+                <img src="./_img/icons/aside/medal-pvsn.png" alt="círculo com a silhueta do loteamento vazada ao centro">
+            </aside>
+        </div>
+    </main> -->
 </body>
 </html>
