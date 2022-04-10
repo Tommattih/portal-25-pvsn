@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  header {
+    background-image: url("../_img/bgs-logo/bg-header.png");
+    height: 18rem;
+    background-size: cover;
+  }
+
+  header .header-layer {
+    height: 18rem;
+    margin: 0 1.5rem;
+  }
+
+  #title h1#loteamento {
+    color: aliceblue;
+    font-size: 8.5rem;
+    position: absolute;
+  }
+
+}

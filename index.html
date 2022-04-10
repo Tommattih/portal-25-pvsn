@@ -38,26 +38,33 @@
 
     <header>
         <!-- ONLY MOBILE -->
-        <div class="header-mobile">
-            <img src="./_img/buttons/button-menu-mobile.png" class="button-menu" alt="icone PVSN 25">
+        <!-- ONLY MOBILE -->
+        <!-- ONLY MOBILE -->
+        <div class="header-layer">
+            <img src="./_img/buttons/button-menu-mobile.png" id="button-open-menu" class="mobile switch show" onclick="openClose()" alt="icone PVSN 25, circulo preto com silhueta do loteamento desenhado ao centro"> 
+            <!-- buttonOpenMenu ***************************** -->
+
             <ul class="social-media">
-                <li><a href="" target="blank"><img src="./_img/icons/ico-facebook.png" alt="botão para Portal PVSN no facebook"></a></li>
-                <li><a href="" target="blank"><img src="./_img/icons/ico-instagram.png" alt="botão para Portal PVSN no instagram"></a></li>
-                <li><a href="" target="blank"><img src="./_img/icons/ico-whatsapp.png" alt="botão para grupo no whatsapp"></a></li>
                 <li><a href="" target="blank"><img src="./_img/icons/ico-discord.png" alt="botão para Portal PVSN no discord"></a></li>
+                <li><a href="" target="blank"><img src="./_img/icons/ico-whatsapp.png" alt="botão para grupo no whatsapp"></a></li>
+                <li><a href="" target="blank"><img src="./_img/icons/ico-instagram.png" alt="botão para Portal PVSN no instagram"></a></li>
+                <li><a href="" target="blank"><img src="./_img/icons/ico-facebook.png" alt="botão para Portal PVSN no facebook"></a></li>
             </ul>
         </div>
-            
-        <div id="menu" class="hidden">
-            <span class="close mobile" onclick="close()">X</span>
-            <div class="logo mobile">
-                <img src="./_img/buttons/ico-pvsn-25-mobile-menu.png" alt="">
-            </div>
-            
+
+        <!-- quando o ul menu estiver com a classe show/true oculta <span, qdo hidden/false ocuta botão -->
+
+        <div id="menu" class="hidden"> <!-- show aqui mostra a navegação do menu mobile-->
+            <span id="button-close-menu" class="mobile" onclick="openClose()">X</span> 
+            <!-- buttonCloseMenu ********* -->
+
+            <!-- GERAL -->
             <!-- GERAL -->
             <div id="title">
+                <img id="logo-open-menu" class="mobile show" src="./_img/buttons/ico-pvsn-25-mobile-menu.png" alt="circulo preto com planta do loteamento desenhada em verde ao centro">
+
                 <h1 id="loteamento">Parque Vitória do Sol Nascente</h1>
-                <h2 id="portal-25">Portal da 25ª área</h2>
+                <h2 id="area">Portal da 25ª área</h2>
             </div>
                     
             <nav>
@@ -76,43 +83,60 @@
         </div>
         
         <!-- ONLY DESKTOP -->
-        <div class="mode">
+        <!-- ONLY DESKTOP -->
+        <!-- ONLY DESKTOP -->
+        <div id="button-mode-desktop" class="mode">
             <ul>
                 <li><img src="./_img/icons/header/button-sun.png" alt="botão de sol para visualizar em light-mode"></li>
                 <li><img src="./_img/icons/header/button-moon.png" alt="botão de lua para visualizar em dark-mode"></li>
             </ul>
         </div>
-
-
     </header>
+<!-- formato do container, no import do /news colocar janela de preview igual ao 2013  -->
     <div class="container">
         <main>
+            <section>
+                    <h1>Últimas notícias</h1>
+                    <img src="./_img/content/news/atst-meet-02-04-2022.png" alt="Convocação para reunião das áreas da ATST para 2 de Abril de 2022, com destaque para o horário da 25ª área">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorem id officiis, dolores totam nulla consequuntur necessitatibus fuga quod commodi aperiam quos. Ratione nulla rem doloremque vitae excepturi, ipsa quos.</p>
+                    <a href="./history.html">Continuar lendo...</a>
+            </section>
+
+            <section>
+                <h1>Links úteis</h1>
+                <ul id="docs-notion">
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/189o1r6BDabCCI_lDz6GeMch8T6TuCLvx_U69waz4OnI/edit?usp=sharing" target="blank" alt="Planilha com descritivo de materiais de construção necessários em uma obra">
+                            <img src="./_img/icons/aside/ico-base.png" alt="icone de planilhas com cifrão">Base
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://drive.google.com/file/d/17qEcm0crWzm3HLrvgScMqHbGc5LNFnZm/view?usp=sharing" target="blank" alt="Documento .DWG com a planta executiva do loteamento">
+                            <img src="./_img/icons/aside/ico-dwg.png" alt="icone de arquivo com extensão .DWG">DWG
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
             <section>
                 <h1>História</h1>
                 <img src="./_img/content/history/parts-1-and-2.png" alt="Imagem aérea do loteamento quando tudo era apenas mato">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolorem id officiis, dolores totam nulla consequuntur necessitatibus fuga quod commodi aperiam quos. Ratione nulla rem doloremque vitae excepturi, ipsa quos.</p>
                 <a href="./history.html">Continuar lendo...</a>
             </section>
-
-            <section>
-                <h1>Links úteis</h1>
-                <ul>
-                    <li>
-                        <a href="" alt="Planilha com descritivo de materiais de construção necessários em uma obra">
-                            <img src="./_img/icons/aside/ico-base.png" alt="icone de planilhas com cifrão">Base
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="Documento .DWG com a planta executiva do loteamento">
-                            <img src="./_img/icons/aside/ico-dwg.png" alt="icone de arquivo com extensão .DWG">DWG
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </main> 
+        </main>
+        
+        <footer>
+            <p>
+                <img src="./_img/icons/ico-tommattih.png" alt="icone com um tomate de oculos e cavanhaque"><br>
+                Create by: Mateus T. Lins &circledR; <br>Maio de 2022 - SP, Brasil. <br>
+                <a href="http://tommattih.github.io">Mais sobre o dev...</a>
+            </p>
+        </footer>
     </div>
-        <!-- <header>
+
+            <!-- <header>
         <h1 class="desktop">Parque Vitória do Sol Nascente</h1>
     </header>
         <div class="container desktop">
