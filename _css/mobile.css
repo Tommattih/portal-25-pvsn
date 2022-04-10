@@ -181,7 +181,7 @@ img#button-open-menu {
 }
 
 #menu ul#buttons li a p {
-  padding-top: 0.2rem;
+  padding-top: 0.2rem 0 0;
   color: #eee;
   text-shadow: 2px 1px 3px rgb(0 0 0 / 80%);
 }
@@ -197,7 +197,7 @@ button.mode-mobile {
 
 /*////////////////// ASIDE //////////////////*/
 .hidden {
-  display: none;
+  opacity: 0;
 }
 
 /*////////////////// MAIN //////////////////*/

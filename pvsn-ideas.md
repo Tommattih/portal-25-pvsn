@@ -1,31 +1,43 @@
 ### Modificações
-- [ ] **modificar** a exibição de **author** linkando pro portifólio 
+- [ ] Aplicar **glassmorfism** no CSS dos `:hover` para os cards das quadras 
 
-- [ ] **= Separar CSS do mobile e do desktop =**
+- [ ] Implementar *dark-mode*
+  ` background: rgba( 0, 200, 12, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.5px );
+    -webkit-backdrop-filter: blur( 0.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );`
+
+- [ ] Criar atalhos para seção em destaque com *"Leia mais"* / *"Continuar lendo..."* ~truque map 2013 para visualizar~
 
 - [ ] Usar mapeamento no html para a navegação das quadras;
 
-- [x] Trocar imagens de .SVG para .PNG otimizadas
+- [ ] Compilar o resumo da reunião de dezembro
 
-- [ ] **Aumentar** `font-size` para ambas as telas
-
-- [x] Melhorar distribuição e **espaçamento** de conteúdo
-
-- [ ] Inserir um preloader preventivo [open door]
-
-- [x] Trocar imagens de .SVG para .PNG otimizadas
-
-- [ ] Aumentar `font-size` da versão desktop
-
-- [ ] Talvez criar uma ocultação de seção em JS com *"Leia mais"* / *"Continuar lendo..."*
-
-- [ ] Fazer um `@keyframe` no header com imagens do drone ~talvez~
+- [ ] Substituir preview do *Instagram* por uma galeria que redirecione para ele
 
 - [ ] Animar a imagem da seção *"Do bem"*
 
-- [ ] Compilar o resumo da reunião de dezembro
+- [ ] Completar as informações técnicas e burocráticas para *"História"*
 
-- [ ] Completar as informações técnicas e burocráticas
+- [/] Fazer um `@keyframe` no header com imagens do drone ~NÃO, pesa mto~
+
+
+<!-- FEITO -->
+- [x] Recriar layout do zero no figma
+
+- [x] Passar layout do Figma pra código
+
+- [x] Para garantir a disposição do *menu mobile*, `usar display: grid;`
+
+- [x] Organizar HTML pra reaproveitar código no CSS do responsivo
+
+- [x] **modificar** a exibição de **author** linkando pro portifólio 
+
+- [x] **= Separar CSS do mobile e do desktop =**
+
+- [?] Menu de navegação fixo, que muda de forma quando escrollado, icones com texto viram botões ~mudou~
 
 - [x] Destacar redes sociais
 
@@ -33,18 +45,21 @@
 
 - [x] Considerar um menu dopdown usando as imagens como "capa" das seções
 
-- [x] Menu de navegação fixo, que muda de forma quando escrollado, icones com texto viram botões
+- [x] Trocar imagens de .SVG para .PNG otimizadas
 
-- [ ] Substituir preview do *Instagram* por uma galeria que redirecione para ele
+- [x] **Aumentar** `font-size` para ambas as telas
 
-- [ ] Aplicar **glassmorfism** no CSS dos `:hover` para os cards das quadras '{
-  background: rgba( 0, 200, 12, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 0.5px );
-  -webkit-backdrop-filter: blur( 0.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  }'
+- [x] Melhorar distribuição e **espaçamento** de conteúdo ~fibonacci~
+
+- [x] Inserir um preloader preventivo ~logo~
+
+- [x] Trocar imagens de .SVG para .PNG otimizadas
+
+- [x] Aumentar `font-size` da versão desktop
+
+- [x] **Navegação** do menu *mobile* e menu *dektop*;
+    * terem exibições de formas distintas ~função resize~
+    * abrir e fechar ~função openClose~
 ---
 
 #### CRIAR BRANCHES PARA:
