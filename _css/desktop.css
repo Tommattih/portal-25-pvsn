@@ -1,8 +1,12 @@
 @media (min-width: 769px) {
 
-  /* OCULTA DETALHES EXCLUSIVOS DO MOBILE  */
+  /* OCULTA DETALHES EXCLUSIVOS DO MOBILE E EXIBE DO DESKTOP  */
   .mobile {
-    display: none;
+    opacity: 0;
+  }
+
+  .desktop {
+    display: block;
   }
 
   /* HEADER ================**/
@@ -12,15 +16,10 @@
     background-size: cover;
   }
 
-  header .header-layer {
-    height: 16rem;
-    margin: 0 1rem;
-  }
-
   #menu {
-    position: absolute;
+    position: absolfixedute;
     top: 0;
-    width: 75vw;
+    width: 80vw;
     background: none;
   }
 
@@ -52,21 +51,41 @@
 
   /* NAV MENU ================*/
   /* NAV MENU ================*/
+  div#menu::before {
+    content: ".";
+    background: #71853763;
+    /*corrigir cor*/
+    height: 16rem;
+    width: 100vw;
+    margin: 0 1rem;
+    position: fixed;
+    z-index: -1;
+  }
+
+  div#menu::before .clip {
+    height: 4rem;
+  }
+
   #menu nav {
     position: relative;
-    top: -1.5rem;
-    height: 16rem;
+    top: 0rem;
+    height: 8rem;
   }
 
   #menu ul#buttons {
     display: flex;
-    gap: 0 0.5rem;
-    padding: 0 0rem 0 2rem;
-    margin: 1rem 0 0 0rem;
-    justify-content: flex-start;
     flex-direction: row;
+    justify-content: flex-start;
+    gap: 0 0.75rem;
+
+    padding: 0 0rem 0 2rem;
+    margin: 1.1rem 0 0 0rem;
     height: 8rem;
+
+    position: fixed;
+    top: -0.5rem;
   }
+
 
   #menu ul#buttons li {
     height: 8rem;
@@ -75,30 +94,55 @@
   #menu ul#buttons li a {
     display: flex;
     flex-direction: column-reverse;
+    padding: 0.5rem 0 0;
+    height: 0.5rem;
+    margin: 0 0.25rem;
 
-    padding: 0.25rem;
-    /* height: 7rem; */
-    height: 2rem;
+    background: none;
+    border: 0;
+    border-radius: 0;
 
-    border-image: none;
-    transition: .2s;
+    transition: .4s;
   }
 
   #menu ul#buttons li a:hover {
-    border-image: linear-gradient(to top, #ffffffbf, #e3b97ba1) 0.5;
     height: 7rem;
-  }
+    padding: 0rem .5rem .5rem;
+    border: solid .1rem #fff;
 
-  #menu ul#buttons li a img {
-    width: 4.5rem;
+    background: #ffffff40;
+    border-image: linear-gradient(to top, #ffffffbf, #e3b97ba1) 0.5;
+    box-shadow: -2px 2px 1px #ffffff69;
+
   }
 
   #menu ul#buttons li a p {
+    position: fixed;
+    top: .75rem;
+
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-shadow: -2px 2px 2px rgb(70 40 9);
+
+    background: rgba(15, 66, 25, 0.78);
+    padding: 0 0.5rem 0;
+    overflow: hidden;
+    transition: .4s;
+  }
+
+  /* com hover */
+  #menu ul#buttons li a p:hover {
+    position: fixed;
+    top: .75rem;
+
     padding: 0 0 0.5rem;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #051;
-    text-shadow: 0px 0px 4px rgb(250 250 250);
+    color: #032;
+    text-shadow: -1px 1px 3px #fff;
+    overflow: hidden;
+    background: none;
   }
 
   /* COLOR MODE ================*/
@@ -111,6 +155,7 @@
     cursor: pointer;
     width: 8rem;
     right: 0rem;
+    z-index: 1;
   }
 
   #button-mode-desktop ul {
@@ -125,6 +170,44 @@
     padding-right: 1rem;
   }
 
+  /* logo header */
+  div#logo {
+    position: absolute;
+    top: 4rem;
+    width: 12rem;
+    height: 12rem;
+    right: 8rem;
+    overflow: hidden;
+  }
+
+  .text-out {
+    overflow: hidden;
+  }
+
+  #logo .text-out img {
+    height: 12rem;
+    position: relative;
+    z-index: 2;
+    animation: rotate 8s infinite ease-in-out;
+  }
+
+  #logo .front-text img,
+  #logo .front-map img {
+    height: 8rem;
+    top: 2rem;
+    right: 2rem;
+    position: absolute;
+    z-index: 2;
+  }
+
+  #logo img.text-out {
+    height: 8rem;
+  }
+
+  #logo .front-text img {
+    animation: change 4s infinite ease-in-out;
+  }
+
   /* ================================*/
 
 
@@ -134,7 +217,6 @@
     top: 16rem;
   }
 
-
   /* NAV ASIDE ================*/
   /* NAV ASIDE ================*/
   .social-media {
@@ -143,4 +225,23 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes change {
+    0% {
+      z-index: 0;
+    }
+
+    50% {
+      z-index: 2;
+    }
+
+    100% {
+      z-index: 1;
+    }
+  }
 }

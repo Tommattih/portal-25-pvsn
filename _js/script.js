@@ -5,17 +5,17 @@ function preload() {
   document.getElementById("preloader").classList.add('hidden');
 }
 
-////////////menu
-function openClose(){
-let menuMobile = document.querySelector("#menu");
-menuMobile ///??
-  if (menuMobile.classList.contains('hidden') == true){
-    menuMobile.classList.remove('hidden');
+//////////change type menu
+window.addEventListener('resize', function () {
+  //var altura = window.innerHeight;
+  var largura = window.innerWidth;
 
+  if (largura > 769) {
+      document.querySelector("#menu").classList.remove('hidden');
   }else{
-    menuMobile.classList.add('hidden');
+    document.querySelector("#menu").classList.add('hidden');
   }
-}
+});
 
 //////////color mode
 function darkLight(){
@@ -30,14 +30,14 @@ function darkLight(){
   }
 }
 
-//////////change type menu
-window.addEventListener('resize', function () {
-  //var altura = window.innerHeight;
-  var largura = window.innerWidth;
+////////////menu
+function openClose(){
+let menuMobile = document.querySelector("#menu");
+menuMobile ///??
+  if (menuMobile.classList.contains('hidden') == true){
+    menuMobile.classList.remove('hidden');
 
-  if (largura > 769) {
-      document.querySelector("#menu").classList.remove('hidden');
   }else{
-    document.querySelector("#menu").classList.add('hidden');
+    menuMobile.classList.add('hidden');
   }
-});
+}

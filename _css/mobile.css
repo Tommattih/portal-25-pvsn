@@ -1,4 +1,8 @@
 /* === MOBILE ===*/
+/* OCULTA DETALHES EXCLUSIVOS DO DESKTOP */
+.desktop {
+  display: none;
+}
 
 /*////////////////// CORES //////////////////*/
 :root {

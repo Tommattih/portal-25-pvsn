@@ -23,9 +23,9 @@
     <link rel="stylesheet" href="./_css/desktop.css">
     
     <!-- JS -->
-    <script src="./_js/script.js"></script>
 </head>
 <body onload="preload();">
+    <script src="./_js/script.js"></script>
     <div id="preloader" class="">
         <span >
             <img src="./_img/bgs-logo/ico-pvsn-25-text-start-mobile.png" class="border" alt="circulo preto com a planta do loteamento ao centro e sigla e número da área desfocado ao fundo">
@@ -40,7 +40,7 @@
         <!-- ONLY MOBILE -->
         <!-- ONLY MOBILE -->
         <!-- ONLY MOBILE -->
-        <div class="header-layer">
+        <div class="header-layer mobile">
             <img src="./_img/buttons/button-menu-mobile.png" id="button-open-menu" class="mobile switch show" onclick="openClose()" alt="icone PVSN 25, circulo preto com silhueta do loteamento desenhado ao centro"> 
             <!-- buttonOpenMenu ***************************** -->
 
@@ -52,9 +52,7 @@
             </ul>
         </div>
 
-        <!-- quando o ul menu estiver com a classe show/true oculta <span, qdo hidden/false ocuta botão -->
-
-        <div id="menu" class="hidden"> <!-- tem um *'hidden'* aq show aqui mostra a navegação do menu mobile-->
+        <div id="menu" class="hidden"> <!-- mostra a navegação do menu mobile-->
             <span id="button-close-menu" class="mobile" onclick="openClose()">X</span> 
             <!-- buttonCloseMenu ********* -->
 
@@ -66,7 +64,7 @@
                 <h1 id="loteamento">Parque Vitória do Sol Nascente</h1>
                 <h2 id="area">Portal da 25ª área</h2>
             </div>
-                    
+
             <nav>
                 <ul id="buttons">
                     <li><a href="./news.html"><img src="./_img/icons/header/ico-news.png" alt=""><p>Notícias</p></a></li>
@@ -76,13 +74,13 @@
                     <li><a href="./galery.html"><img src="./_img/icons/header/ico-galery.png" alt=""><p>Galeria</p></a></li>
                     <li><a href="./history.html"><img src="./_img/icons/header/ico-history.png" alt=""><p>História</p></a></li>
                     <li><a href="./blueprints.html"><img src="./_img/icons/header/ico-plan.png" alt=""><p>Planta</p></a></li>
-                    <li><a href="./maps.html"><img src="./_img/icons/header/ico-map.png" alt=""><p>Rotas</p></a></li>
+                    <li><a href="./maps.html" on=""><img src="./_img/icons/header/ico-map.png" alt=""><p>Rotas</p></a></li>
                     <li class="toggle-theme mobile"><a onclick="open()" class="mode-mobile"><img src="./_img/icons/header/button-togle-mode.png" alt=""><p>Modo</p></a></li>
                 </ul>
             </nav>
         </div>
         
-        <!-- ONLY DESKTOP -->
+        
         <!-- ONLY DESKTOP -->
         <!-- ONLY DESKTOP -->
         <div id="button-mode-desktop" class="mode" onclick="darkLight()">
@@ -91,6 +89,21 @@
                 <li><img src="./_img/icons/header/button-moon.png" alt="botão de lua para visualizar em dark-mode"></li>
             </ul>
         </div>
+
+        <div id="logo" class="desktop">
+            <div class="text-out">
+                <img src="./_img/bgs-logo/ico-pvsn-25-text-keyframe.png" alt="texto circular laranja escrito 'Parque Vitória do Sol Nascente, 25ª área' contornando o logo da página (próxima imagem)">
+            </div>
+            <div class="front-map">
+                <img src="./_img/bgs-logo/icon-PVSN-25-map-keyframe.png" alt="círculo preto com silhueta do loteamento em destaque ao centro">
+            </div>
+            
+            <div class="front-text">
+                <img src="./_img/bgs-logo/ico-pvsn-25-keyframe.png" alt="círculo preto com 'PVSN 25ª' em destaque ao centro">
+            </div>           
+
+        </div>
+                
     </header>
 <!-- formato do container, no import do /news colocar janela de preview igual ao 2013  -->
     <div class="container">
@@ -131,7 +144,7 @@
             <p>
                 <img src="./_img/icons/ico-tommattih.png" alt="icone com um tomate de oculos e cavanhaque"><br>
                 Create by: Mateus T. Lins &circledR; <br>Maio de 2022 - SP, Brasil. <br>
-                <a href="http://tommattih.github.io">Mais sobre o dev...</a>
+                <a href="http://tommattih.github.io" target="_blank">Mais sobre o dev...</a>
             </p>
         </footer>
     </div>
