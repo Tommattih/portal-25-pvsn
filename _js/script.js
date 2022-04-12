@@ -19,13 +19,20 @@ window.addEventListener('resize', function () {
 
 //////////color mode
 function darkLight(){
-  let colorMode = document.querySelector("#button-mode-desktop");
+let colorMode = document.querySelector("#button-mode-desktop");
+const sunMode = document.querySelector(".sun-theme");
+const moonMode = document.querySelector(".moon-theme");
 
   if(colorMode.classList.contains('dark') == true){
     colorMode.classList.remove('dark');
+    moonMode.classList.remove('switch');
+    sunMode.classList.add('switch');
     alert("dark ^^");
+      
   }else{
     colorMode.classList.add('dark');
+    moonMode.classList.add('switch');
+    sunMode.classList.remove('switch');
     alert("light ^^");
   }
 }
@@ -33,7 +40,6 @@ function darkLight(){
 ////////////menu
 function openClose(){
 let menuMobile = document.querySelector("#menu");
-menuMobile ///??
   if (menuMobile.classList.contains('hidden') == true){
     menuMobile.classList.remove('hidden');
 
