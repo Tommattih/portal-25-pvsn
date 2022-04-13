@@ -21,7 +21,7 @@
 
 - [ ] Completar as informações técnicas e burocráticas para *"História"*
 
-- [/] Fazer um `@keyframe` no header com imagens do drone ~NÃO, pesa mto~
+- [ ] Fazer um `@keyframe` no header com imagens do drone ~NÃO, pesa mto~
 
 
 <!-- FEITO -->
@@ -135,3 +135,9 @@
         * ELETRODOMÉSTICOS
 
 ---
+
+<!-- para paginação
+https://bestjquery.com/tutorial/pagination/demo153/
+
+nas pages, dobrar/suprimir as sessões [execeto a primeira], abrir onclick
+essa mecanica => http://bestjquery.com/tutorial/accordion/demo87/ -->

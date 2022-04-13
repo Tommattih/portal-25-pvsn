@@ -88,18 +88,6 @@
   padding-left: 1rem;
 }
 
-.social-media {
-  display: inline-flex;
-  gap: 1rem;
-  padding: 0 1.5rem;
-}
-
-.social-media li img {
-  height: 1.5rem;
-  margin: 0.5rem 0 0.2rem;
-  box-shadow: -2px 2px 4px -1px rgb(0 0 0 / 40%);
-}
-
 /*////////////////// MENU //////////////////*/
 /*////////////////// MENU //////////////////*/
 #menu {
@@ -209,13 +197,13 @@ button.mode-mobile {
 /*////////////////// CONTAINER //////////////////*/
 .container {
   background-color: #eee;
+  /*escolher uma segunda cor de fundo*/
   background-image: url(../_img/bgs-logo/bg-solo-menu-mobile.png);
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 4rem;
   z-index: -1;
-
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -224,7 +212,7 @@ button.mode-mobile {
   background-color: rgba(255, 255, 255, 0.6);
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 0 1rem 1rem;
   box-shadow: -3px 3px 3px rgb(0 0 0 / 40%);
 }
 
@@ -252,12 +240,32 @@ button.mode-mobile {
   font-family: 'Montserrat', sans-serif
 }
 
-.container a {
-  display: inline;
-  align-self: center;
+.container section a,
+.container footer a {
   padding: 1rem;
+  place-self: center;
   color: #070d52;
   text-shadow: 0px 0px 5px #c0ff00f0;
+}
+
+/*aside*/
+aside {
+  text-align: center;
+}
+
+aside .social-media {
+  display: inline-flex;
+  gap: 2.5rem;
+}
+
+aside .social-media li {
+  width: 2.5rem;
+}
+
+.social-media li img {
+  height: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0px -0.2rem 0.5rem 0.4rem rgb(250 250 250 / 40%);
 }
 
 /*////////////////// Links Úteis //////////////////*/
@@ -295,18 +303,20 @@ footer {
 
 footer img {
   width: 4rem;
-  padding: 0.5rem 0;
+  margin: 1rem 0 0.5rem;
 }
 
 footer p {
-  display: inline;
-  padding: 0 1rem;
-  color: #006255;
+  display: inline-block;
+  color: #002b25;
   text-align: center;
   font-size: 1rem;
   overflow: hidden;
+  margin-bottom: 4rem;
+  text-shadow: 0px 0px 4px #f5deb3;
 }
 
 /*////////////////// DARK MODE //////////////////*/
 /*////////////////// DARK MODE //////////////////*/
 /*////////////////// DARK MODE //////////////////*/
+/**color: #070d52 referencia pro dark;*/
