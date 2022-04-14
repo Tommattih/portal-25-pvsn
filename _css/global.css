@@ -75,13 +75,11 @@
 
 .header-layer {
   position: fixed;
-  display: inline-flex;
   width: 100vw;
   height: 4rem;
   background-color: rgba(58, 67, 21, .6);
-  align-items: center;
-  justify-content: space-around;
   box-shadow: 0 4px 4px rgb(0 0 0 / 40%);
+  z-index: 0;
 }
 
 .header-layer .button-open-menu {
@@ -114,6 +112,9 @@ span#button-close-menu {
 
 img#button-open-menu {
   margin-left: 1rem;
+  position: fixed;
+  left: 0rem;
+  top: .25rem;
 }
 
 /*open menu*/
@@ -203,7 +204,7 @@ button.mode-mobile {
   height: 100vh;
   position: fixed;
   top: 4rem;
-  z-index: -1;
+  z-index: 0;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -253,19 +254,36 @@ aside {
   text-align: center;
 }
 
-aside .social-media {
+/* aside .social-media {
   display: inline-flex;
   gap: 2.5rem;
+} */
+aside .social-media {
+  position: fixed;
+  display: grid;
+  gap: .5rem;
+  height: 4rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: none;
+  padding: 1rem 0;
+  right: 1rem;
+  top: 0;
 }
 
 aside .social-media li {
-  width: 2.5rem;
+  width: 2rem;
+}
+
+aside .social-media li a {
+  margin: 1rem 0;
+  height: 2rem;
 }
 
 .social-media li img {
-  height: 1.5rem;
-  margin: 1rem 0;
-  box-shadow: 0px -0.2rem 0.5rem 0.4rem rgb(250 250 250 / 40%);
+  height: 1.6rem;
+  margin: 0;
+  box-shadow: -2px 2px 4px -1px rgb(10 10 10 / 40%);
 }
 
 /*////////////////// Links Úteis //////////////////*/
