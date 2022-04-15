@@ -9,6 +9,40 @@
     display: block;
   }
 
+
+  /* PRELOADER ================**/
+  #preloader {
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    background-color: #010;
+  }
+
+  #preloader span img.center {
+    position: absolute;
+    padding: 0;
+    z-index: 4;
+    width: 15%;
+    top: 38%;
+    left: 44%;
+  }
+
+  #preloader span img.border {
+    position: absolute;
+    padding: 0;
+    z-index: 5;
+    width: 23%;
+    height: 35.55%;
+    top: 32%;
+    left: 40%;
+    animation: rotate infinite 3.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  }
+
+
   /* HEADER ================**/
   header {
     background-image: url("../_img/bgs-logo/bg-header.png");
@@ -29,7 +63,7 @@
     z-index: 1;
 
     margin-top: 1rem;
-    padding: 1rem;
+    /* padding: 1rem;  estranho ñ muda nada aq*/
     text-align: center;
 
     width: 100vw;
@@ -285,9 +319,13 @@
     height: 70%;
     margin-top: 1rem;
     background-color: #fff;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 4fr 2fr 2fr 3fr;
   }
 
-  .container aside::after {
+  .container aside header::before {
     content: ' ';
     height: 100%;
     width: 16vw;
@@ -297,6 +335,12 @@
     background-color: #776e154a;
     padding: 0rem;
     margin: 0;
+    z-index: -1;
+  }
+
+  .container aside main {
+    position: absolute;
+    top: 16rem;
   }
 
   aside .social-media::before {
@@ -306,17 +350,16 @@
     font-family: 'Encode Sans SC', sans-serif;
     top: 0;
     position: absolute;
-    font-style: italic;
-    margin: 0rem -1rem 0 0;
+    margin: 1rem 0 0 0;
   }
 
   aside .social-media {
-    position: absolute;
+    position: relative;
     right: 0rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0rem 1rem;
+    grid-template-rows: 3fr 1fr 1fr;
+    gap: 0;
     height: 16rem;
     padding: 1.5rem 1rem;
     z-index: 1;
@@ -333,6 +376,17 @@
     font-size: .7rem;
   }
 
+  .container aside ul#docs-notion {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+  }
+
+  .container aside ul#docs-notion img {
+    width: 2.5rem;
+  }
+
   /*nthchild pra nomear 1 a 1*/
 
   aside .social-media li img {
@@ -343,18 +397,35 @@
     box-shadow: -4px 4px 4px -4px rgb(0 0 0 / 40%);
   }
 
+  aside footer {
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+    padding: 0;
+    margin-right: 0;
+  }
+
+  aside footer p {
+    position: absolute;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+
   /* FOOTER ================*/
   footer {
     position: fixed;
     right: 0rem;
     bottom: 0;
     padding: 0;
-    margin: 0rem 1.4rem 1rem;
+    margin: 0 0 1rem 0;
+    overflow: hidden;
+    left: 50%;
   }
 
   footer p {
-    font-size: .7rem;
-    margin-bottom: 2rem;
+    display: inline;
+    overflow: hidden;
+    margin-bottom: 1rem;
   }
 
   /************* keyframes *************/
