@@ -141,3 +141,6 @@ https://bestjquery.com/tutorial/pagination/demo153/
 
 nas pages, dobrar/suprimir as sessões [execeto a primeira], abrir onclick
 essa mecanica => http://bestjquery.com/tutorial/accordion/demo87/ -->
+
+## SOBRE O PROJETO
+o intuito do portal é encontrar e conhecer seus vizinhos mais próximos, trocar informações e experiencias, prevenindo danos e desperdicios e, documentar a transformação do lugar... do mato ao lar.
