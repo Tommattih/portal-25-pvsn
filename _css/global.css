@@ -40,7 +40,7 @@
 /* até max 430px */
 #preloader .hidden {
   display: none;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 #preloader {
