@@ -10,10 +10,10 @@ window.addEventListener('resize', function () {
   //var altura = window.innerHeight;
   var largura = window.innerWidth;
 
-  if (largura > 769) {
-      document.querySelector("#menu").classList.remove('hidden');
+  if (largura <= 768) {
+      document.querySelector("#menu").classList.add('hidden');
   }else{
-    document.querySelector("#menu").classList.add('hidden');
+    document.querySelector("#menu").classList.remove('hidden');
   }
 });
 
@@ -23,7 +23,7 @@ let colorMode = document.querySelector("#button-mode-desktop");
 const sunMode = document.querySelector(".sun-theme");
 const moonMode = document.querySelector(".moon-theme");
 
-  if(colorMode.classList.contains('dark') == true){
+  if(colorMode.classList.contains('dark')){
     colorMode.classList.remove('dark');
     moonMode.classList.remove('switch');
     sunMode.classList.add('switch');
