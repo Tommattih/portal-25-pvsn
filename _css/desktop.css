@@ -79,6 +79,7 @@
   }
 
   body::-webkit-scrollbar,
+  .container::-webkit-scrollbar,
   .container main::-webkit-scrollbar {
     width: 0.01rem;
     background: #fff;
@@ -336,6 +337,7 @@
     display: grid;
     grid-template-columns: 7fr 2fr;
     grid-template-rows: auto;
+    column-gap: 0.5rem;
     padding: 1rem;
 
     position: relative;
@@ -351,10 +353,10 @@
   .container main {
     position: relative;
     top: 0rem;
-    left: -1rem;
+    left: 0rem;
     z-index: 0;
-    height: 100%;
-    width: 100%;
+    height: max-content;
+    width: auto;
     margin: 0;
   }
 
@@ -362,7 +364,7 @@
     background-color: rgba(255, 255, 255, .8);
     display: flex;
     flex-direction: column;
-    margin: 0 0 1rem 1rem;
+    margin: 0;
     box-shadow: -4px 4px 4px rgb(0 0 0 / 40%);
   }
 
@@ -378,58 +380,64 @@
     position: relative;
     top: 0;
     right: 0rem;
-    bottom: 2rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
 
     background-color: #fff;
-    height: auto;
-    width: 100%;
-    margin: 0;
     box-shadow: -4px 4px 4px 0px rgb(0 0 0 / 40%);
+    height: max-content;
+    width: auto;
 
     overflow: hidden;
   }
 
   .container aside::before {
     content: ' ';
-    height: 100vh;
-    width: 100vw;
+    width: auto;
+    height: 100%;
     background-color: #776e154a;
 
     position: absolute;
+    z-index: 0;
     top: 0;
-    right: 0;
-    left: 0;
+    right: 0rem;
+    left: 0rem;
     bottom: 0;
 
-    padding: 0rem;
+    padding: 0;
     margin: 0;
-    z-index: 0;
+  }
+
+  aside a {
+    text-decoration: none;
   }
 
   /* ASIDE HEADER */
   .container aside header {
-    overflow: hidden;
     position: relative;
-    padding: 0 1rem;
     width: 100%;
-    height: 16rem;
+    height: auto;
+    padding: 2rem 1rem 1rem;
+    overflow: hidden;
   }
 
   .container aside header .page {
     position: relative;
+    top: 0;
+
     width: 100%;
-    height: auto;
-    display: flex;
-    overflow: hidden;
-    top: 1.5rem;
+    height: 100%;
+    margin: 0;
     padding: 0;
+
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0rem;
+    overflow: hidden;
   }
 
   .container aside header .page img {
@@ -442,10 +450,19 @@
   .container aside main {
     position: relative;
     top: 0;
+    right: 0;
+    left: 0;
 
-    height: auto;
-    margin: 0 auto;
+    height: max-content;
+    width: auto;
+    margin: 0 1rem;
     overflow: hidden;
+
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .container aside main p {
@@ -466,28 +483,28 @@
 
   aside .social-media {
     position: relative;
-    right: 1rem;
-    left: 1rem;
-    top: 1rem;
+    right: 0rem;
+    left: 0rem;
+    top: 0rem;
 
-    background-color: #265;
+    /* background-color: #265; */
     overflow: hidden;
-    height: 14rem;
+    height: max-content;
     width: auto;
+    margin: 0;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 0.5rem 1rem 1rem;
-    justify-content: space-around;
-    align-content: center;
-    margin: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    padding: 2.5rem 0rem 1rem;
+    justify-items: center;
   }
 
   aside .social-media li {
-    width: 3.125rem;
+    width: auto;
     position: relative;
     top: 0rem;
+    overflow: hidden;
   }
 
   aside .social-media li img {
@@ -504,31 +521,33 @@
     background: none;
     box-shadow: none;
 
-    position: absolute;
-    top: 0;
-
-    margin: 0.5rem auto;
-    padding: 0;
     text-decoration: underline;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-family: 'Encode Sans SC', sans-serif;
+    position: absolute;
+    top: 0rem;
+    margin: 0 auto;
     font-family: escolha a fonte sans-serif;
   }
 
   .container aside ul#docs-notion {
     position: relative;
-    top: 1rem;
-    right: 1rem;
-    left: 1rem;
+    top: 0rem;
+    right: 0rem;
+    left: 0rem;
 
-    background-color: #252;
-    height: 8rem;
+    /* background-color: #252; */
+    background: none;
+    box-shadow: none;
     width: auto;
+    height: max-content;
+    overflow: hidden;
+    margin: 1rem 0;
+    padding: 2.5rem 0 0;
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1rem 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 
   container ul#docs-notion::after {
@@ -544,7 +563,7 @@
   }
 
   .container ul#docs-notion li {
-    top: 1.5rem;
+    top: 0rem;
     position: relative;
   }
 
@@ -564,21 +583,22 @@
   /* FOOTER ================*/
   aside footer {
     position: relative;
-    left: 0rem;
-    top: 0rem;
-    /* z-index: 0; */
-    background: #7ff;
-    height: 10rem;
+    top: 0;
+    right: 0;
+    left: 0;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem 0 0;
-    margin: 1rem 1rem;
+    /* background: #7ff; */
+    height: max-content;
+    width: auto;
+    padding: 0;
+    margin: 0 1rem;
+
+    overflow: hidden;
   }
 
   aside footer p {
     font-size: 1rem;
+    overflow: hidden;
     margin-bottom: 1rem;
   }
 
