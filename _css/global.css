@@ -261,15 +261,13 @@ aside {
 } */
 aside .social-media {
   position: fixed;
-  display: grid;
-  gap: .5rem;
-  height: 4rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  gap: 0.5rem;
+  height: max-content;
   background: none;
-  padding: 1rem 0;
   right: 1rem;
   top: 0;
+  margin: 1rem 0;
 }
 
 aside .social-media li {
@@ -277,8 +275,11 @@ aside .social-media li {
 }
 
 aside .social-media li a {
-  margin: 1rem 0;
-  height: 2rem;
+  height: max-content;
+}
+
+aside .social-media a p {
+  display: none;
 }
 
 .social-media li img {

@@ -28,7 +28,7 @@
   #preloader {
     width: 100vw;
     height: 100vh;
-    position: relative;
+    position: absolute;
     background-size: contain;
     background-color: #232618;
     background-image: url("../_img/bgs-logo/bg-solo-desk.png");
@@ -466,6 +466,7 @@
   }
 
   .container aside main p {
+    display: block;
     color: #000;
     font-size: 1rem;
     font-family: uma fonte sans-serif;
