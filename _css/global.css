@@ -6,20 +6,32 @@
 
 /*////////////////// CORES //////////////////*/
 :root {
-  --bg-h1: #000;
-  --bg-header: #000;
-  --bg-title: #000;
+  --bg-title-menu-solid: rgb(40, 54, 21);
+  --bg-title-menu: rgba(40, 54, 21, .8);
+
+  --bg-header-solid: rgb(113, 133, 55);
+  --bg-header: rgba(113, 133, 55, 0.388);
+
+  --bg-frame-solid: #000;
+  --bg-frame: #000;
+
+  --bg-container-solid: #000;
   --bg-container: #000;
-  --tex-title: #000;
-  --txt-header: rgb(162, 179, 97);
-  --txt-light: #000;
-  --txt-dark: #000;
+
+  --txt-header: rgb(240, 248, 255);
+  --txt-p: #000;
+  --txt-title: #000;
+  --txt-more: #000;
+
   --shaddow1: -4px 4px 4px rgba(0 0 0 / 40%);
   --shaddow2: 4px -4px 8px solid rgba(0, 0, 0, .4);
-  --font-area: 'Encode Sans SC', sans-serif;
-  --font-titles-header: 'Snippet', sans-serif;
-  --font-content-p: 'Montserrat', sans-serif;
-  --font-section-h1: 'Poppins', sans-serif;
+  --shaddow3: -4px 4px 4px rgb(0 0 0 / 80%);
+
+  --font-title-header: 'Encode Sans SC', sans-serif;
+  --font-content-p: 'Poppins', sans-serif;
+  --font-title-section: 'Encode Sans SC', sans-serif;
+  --font-link: 'Montserrat', sans-serif;
+
 }
 
 * {
@@ -28,12 +40,12 @@
   box-sizing: border-box;
   list-style: none;
   overflow-x: hidden;
-  /* font-family: 'Encode Sans SC', sans-serif; */
-  /* font-family: 'Snippet', sans-serif; */
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-family: 'Poppins', sans-serif; */
-  /* font-family: 'PT Sans Caption', sans-serif; */
-
+  font-family: 'Encode Sans SC', sans-serif;
+  /*med 500, bold 700*/
+  font-family: 'Montserrat', sans-serif;
+  /*reg 400, reg it 400, semib 600, semib it 600*/
+  font-family: 'Poppins', sans-serif;
+  /*lig 300, lig 300 it, semib 600, semib 600 it*/
 }
 
 /*////////////////// PRELOADER //////////////////*/
@@ -133,7 +145,7 @@ img#button-open-menu {
 #menu h2 {
   text-align: center;
   color: #fff;
-  font-family: 'Snippet', sans-serif;
+  font-family: var(--font-title-header);
   text-shadow: -2px 0px 3px rgb(0 0 0 / 80%);
 }
 
@@ -205,7 +217,7 @@ button.mode-mobile {
   position: fixed;
   top: 4rem;
   z-index: 0;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   padding-top: 1rem;
 }
 
@@ -225,7 +237,7 @@ button.mode-mobile {
   justify-content: center;
   box-shadow: -3px 3px 3px rgb(0 0 0 / 40%);
 
-  font-family: Encode Sans SC, sans-serif;
+  font-family: var(--font-title-header);
   font-weight: 400;
   font-size: 1.25rem;
 }
@@ -239,7 +251,7 @@ button.mode-mobile {
   font-size: 1.2rem;
   text-align: justify;
   padding: 0 1rem;
-  font-family: 'Montserrat', sans-serif
+  font-family: var(--font-content-p);
 }
 
 .container section a,
@@ -312,7 +324,7 @@ ul#docs-notion::before {
   top: 0;
   left: 0rem;
   right: 0;
-  font-family: escolher fonte ajusta sombra sans, sans-serif;
+  font-family: var(--font-title-section);
   z-index: 1;
   padding-top: 0.2rem;
   box-shadow: 0px 2px 4px #00000069;

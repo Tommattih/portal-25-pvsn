@@ -87,15 +87,10 @@
 
 
   /* HEADER ================**/
-  /* header {
-    background-image: url("../_img/bgs-logo/bg-header.png");
-    height: 16rem;
-    background-size: cover;
-  } */
-
   #menu {
     display: block;
     z-index: 1;
+    color: var(--txt-header);
   }
 
   div#title::before {
@@ -129,9 +124,9 @@
 
   #title h1#loteamento {
     font-size: 2rem;
-    color: aliceblue;
+    color: rgb(240, 248, 255);
     font-family: 'Encode Sans SC', sans-serif;
-    background-color: rgba(40, 54, 21, .8);
+    background-color: var(--bg-title-menu);
     box-shadow: -4px 4px 4px rgb(0 0 0 / 80%);
     position: relative;
     top: 11rem;
@@ -141,7 +136,7 @@
     width: 75%;
     height: 4.25rem;
     padding: 1rem 0 0 1rem;
-    margin: 0rem 0 0 0rem;
+    margin: 0rem 0 0 1rem;
     overflow: hidden;
     /* flex-direction: row;*/
   }
@@ -152,12 +147,13 @@
     left: 1rem;
     z-index: 2;
 
-    background-color: rgba(40, 54, 21, .8);
+    background-color: var(--bg-title-menu);
     font-size: 1.4rem;
-    width: 14rem;
+    width: max-content;
 
     padding: 0.6rem 1rem 0.4rem;
-    margin: 0rem;
+    margin: 0rem 0 0 1rem;
+
   }
 
   /* NAV MENU ================*/
@@ -179,10 +175,9 @@
   #menu ul#buttons li {
     background-color: rgb(15, 66, 25);
     background: rgba(15, 66, 25, 0.8);
-    width: 5rem;
     height: 1.4rem;
+    width: 4.6rem;
 
-    font-family: 'PT Sans Caption', sans-serif;
     overflow: hidden;
     transition: .3s;
   }
@@ -227,7 +222,8 @@
 
     color: #fff;
     font-size: 1rem;
-    font-weight: 400;
+    font-family: var(--font-title-header);
+    font-weight: 500;
     text-shadow: -2px 2px 2px rgb(70 40 9);
 
     padding: 0 0.5rem 0;
@@ -242,7 +238,6 @@
 
     padding: 0 0 0.5rem;
     font-size: 1rem;
-    font-weight: 600;
     color: #032;
     text-shadow: -1px 1px 3px #fff;
     overflow: hidden;
@@ -266,8 +261,7 @@
     overflow: hidden;
   }
 
-  #button-mode-desktop:hover,
-  aside .social-media li img:hover {
+  #button-mode-desktop:hover {
     filter: brightness(1.2);
     transform: scale(1.125);
   }
@@ -368,8 +362,12 @@
     box-shadow: -4px 4px 4px rgb(0 0 0 / 40%);
   }
 
+  .container section p {
+    font-size: 1.1rem;
+  }
+
   .container h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     box-shadow: -4px 4px 4px rgb(0 0 0 / 40%);
     padding: 0.3rem;
   }
@@ -469,14 +467,14 @@
     display: block;
     color: #000;
     font-size: 1rem;
-    font-family: uma fonte sans-serif;
+    font-family: var(--font-link);
   }
 
   aside .social-media::before {
     content: 'SOCIAL MEDIA';
     TEXT-DECORATION: underline;
     font-size: 1rem;
-    font-family: 'Encode Sans SC', sans-serif;
+    font-family: var(--font-title-section);
     top: 0.5rem;
     position: absolute;
     margin: 0 auto;
@@ -499,6 +497,7 @@
     grid-template-rows: 2fr 2fr;
     padding: 2.5rem 0rem 1rem;
     justify-items: center;
+    gap: 1rem;
   }
 
   aside .social-media li {
@@ -506,15 +505,31 @@
     position: relative;
     top: 0rem;
     overflow: hidden;
+    transition: .15s;
+  }
+
+  aside .social-media li:hover,
+  .container ul#docs-notion li:hover {
+    z-index: 1;
+    background: rgb(255 255 255 / 50%);
+    border-radius: 0.4rem;
+    padding: 0.25rem;
+    transform: translateY(-0.5rem);
+    margin-bottom: -1rem;
   }
 
   aside .social-media li img {
     margin: 0;
     height: 2rem;
-    border: solid 1px #57faff7d;
     border-radius: 0.5rem;
     box-shadow: -4px 4px 4px -4px rgb(0 0 0 / 40%);
   }
+
+  aside .social-media li img:hover,
+  .container aside ul#docs-notion img:hover {
+    filter: brightness(1.2);
+  }
+
 
   /* LINKS UTEIS */
   aside ul#docs-notion::before {
@@ -524,11 +539,12 @@
 
     text-decoration: underline;
     font-size: 1rem;
-    font-family: 'Encode Sans SC', sans-serif;
+    font-family: var(--font-title-section);
     position: absolute;
     top: 0rem;
     margin: 0 auto;
-    font-family: escolha a fonte sans-serif;
+    font-family: var(--font-title-section);
+
   }
 
   .container aside ul#docs-notion {
@@ -544,16 +560,17 @@
     height: max-content;
     overflow: hidden;
     margin: 1rem 0;
-    padding: 2.5rem 0 0;
+    padding: 2.5rem 0 .5rem;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    gap: 1rem;
   }
 
   container ul#docs-notion::after {
     content: "Links úteis";
-    background: #9da693;
+    /* background: #9da693; */
     height: 8rem;
     position: relative;
     width: 100vh;
@@ -566,14 +583,16 @@
   .container ul#docs-notion li {
     top: 0rem;
     position: relative;
+    transition: .15s;
   }
 
   .container ul#docs-notion li a {
-    position: relative;
+    padding-bottom: 0;
   }
 
   .container aside ul#docs-notion img {
-    width: 2.5rem;
+    width: 2rem;
+    margin: 0 0 0.5rem;
   }
 
   /*nthchild pra nomear 1 a 1*/
