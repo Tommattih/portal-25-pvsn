@@ -37,13 +37,6 @@
     </div>
 
     <header>
-        <!-- ONLY MOBILE -->
-        <!-- ONLY MOBILE -->
-        <!-- ONLY MOBILE -->
-        <div class="header-layer mobile">
-            <img src="./_img/buttons/button-menu-mobile.png" id="button-open-menu" class="mobile switch show" onclick="openClose()" alt="icone PVSN 25, circulo preto com silhueta do loteamento desenhado ao centro"> 
-            <!-- buttonOpenMenu ***************************** -->
-        </div>
 
         <div id="menu" class=""> <!-- mostra a navegação do menu mobile-->
             <span id="button-close-menu" class="mobile" onclick="openClose()">X</span> 
@@ -77,7 +70,7 @@
                     <li><a href="./news.html"><img src="./_img/icons/header/ico-news.png" alt=""><p>Notícias</p></a></li>
                     <li><a href="./services.html"><img src="./_img/icons/header/ico-services.png" alt=""><p>Serviços</p></a></li>
                     <li><a href="./faq.html"><img src="./_img/icons/header/ico-faq.png" alt=""><p>Dúvidas</p></a></li>
-                    <li><a href="./enviroment.html"><img src="./_img/icons/header/ico-planet.png" alt=""><p>Do Bem</p></a></li>
+                    <li><a href="./enviroment.html"><img src="./_img/icons/header/ico-planet.png" alt=""><p>DoBem</p></a></li>
                     <li><a href="./galery.html"><img src="./_img/icons/header/ico-galery.png" alt=""><p>Galeria</p></a></li>
                     <li><a href="./history.html"><img src="./_img/icons/header/ico-history.png" alt=""><p>História</p></a></li>
                     <li><a href="./blueprints.html"><img src="./_img/icons/header/ico-plan.png" alt=""><p>Planta</p></a></li>
@@ -121,7 +114,14 @@
                     <img src="./_img/icons/aside/medal-pvsn.png" alt="PAGE LOGO">
                 </div>
             </header>
+
             <main>
+
+        <!-- ONLY MOBILE -->
+        <div class="header-layer mobile">
+            <img src="./_img/buttons/button-menu-mobile.png" id="button-open-menu" class="mobile switch show" onclick="openClose()" alt="icone PVSN 25, circulo preto com silhueta do loteamento desenhado ao centro"> 
+            <!-- buttonOpenMenu ***************************** -->
+        </div>
                 <ul class="social-media">
                     <li><a href="https://discord.gg/ABEhtET4dC" target="blank"><img src="./_img/icons/ico-discord.png" alt="botão para Portal PVSN no discord"><p>Discord</p></a></li>
                     <li><a href="https://chat.whatsapp.com/K4JaFotEZSWC7EAtq2xn2y" target="blank"><img src="./_img/icons/ico-whatsapp.png" alt="botão para grupo no whatsapp"><p>Whatsapp</p></a></li>
@@ -131,21 +131,29 @@
 
                 <ul id="docs-notion">
                     <li>
-                        <a href="https://docs.google.com/spreadsheets/d/189o1r6BDabCCI_lDz6GeMch8T6TuCLvx_U69waz4OnI/edit?usp=sharing" target="blank" alt="Planilha com descritivo de materiais de construção necessários em uma obra">
-                            <img src="./_img/icons/aside/ico-base.png" alt="icone de planilhas com cifrão">
-                            <p>Base</p>
+                        <a href="https://docs.google.com/spreadsheets/d/189o1r6BDabCCI_lDz6GeMch8T6TuCLvx_U69waz4OnI/edit?usp=sharing" target="_blank" alt="Planilha com descritivo de materiais de construção necessários em uma obra">
+                            <abbr title="Planilha base de materiais e serviços para fazer orçamento">                            
+                                <img src="./_img/icons/aside/ico-base.png" alt="icone de planilhas com cifrão">
+                                <p>Base</p>
+                            </abbr>
                         </a>
                     </li>
-                    
+                        
                     <li>
-                        <a href="https://drive.google.com/file/d/17qEcm0crWzm3HLrvgScMqHbGc5LNFnZm/view?usp=sharing" target="blank" alt="Documento .DWG com a planta executiva do loteamento">
-                            <img src="./_img/icons/aside/ico-dwg.png" alt="icone de arquivo com extensão .DWG"><p>DWG</p>
+                        <a href="https://drive.google.com/file/d/17qEcm0crWzm3HLrvgScMqHbGc5LNFnZm/view?usp=sharing" target="_blank" alt="Documento .DWG com a planta executiva do loteamento">
+                            <abbr title="Baixar a planta executiva do loteamento">
+                                <img src="./_img/icons/aside/ico-dwg.png" alt="icone de arquivo com extensão .DWG"><p>DWG</p>
+                            </abbr>
                         </a>
                     </li>
                 </ul>
             </main>
+
             <footer>
-                <img src="./_img/icons/ico-tommattih.png" alt="icone com um tomate de oculos e cavanhaque">
+                <a href="https://www.linkedin.com/in/tommattih/" target="_blank">
+                    <abbr title="Sobre o Desenvolvedor">
+                    <img src="./_img/icons/ico-tommattih.png" alt="icone com um tomate de oculos e cavanhaque"></abbr>
+                </a>
                 <p>Tom Lins &circledR; 
                     <br> Maio de 2022 
                     <br>Osasco - SP - Brasil</p>

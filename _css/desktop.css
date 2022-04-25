@@ -97,8 +97,8 @@
     content: ".";
     width: auto;
     height: 16rem;
-    background: #71853763;
-    box-shadow: 0 2px 4px black;
+    background: var(--bg-header);
+    box-shadow: var(--shadow5);
 
     position: fixed;
     right: 1rem;
@@ -123,16 +123,20 @@
   }
 
   #title h1#loteamento {
-    font-size: 2rem;
-    color: rgb(240, 248, 255);
-    font-family: 'Encode Sans SC', sans-serif;
     background-color: var(--bg-title-menu);
-    box-shadow: -4px 4px 4px rgb(0 0 0 / 80%);
+    box-shadow: var(--shadow4);
+
+    font-family: var(--font-title-header);
+    font-size: 2rem;
+    color: var(--font-title-header);
+
     position: relative;
     top: 11rem;
     left: 1rem;
+
     display: block;
     text-align: left;
+
     width: 75%;
     height: 4.25rem;
     padding: 1rem 0 0 1rem;
@@ -153,7 +157,7 @@
 
     padding: 0.6rem 1rem 0.4rem;
     margin: 0rem 0 0 1rem;
-
+    box-shadow: var(--shadow6);
   }
 
   /* NAV MENU ================*/
@@ -173,8 +177,8 @@
   }
 
   #menu ul#buttons li {
-    background-color: rgb(15, 66, 25);
-    background: rgba(15, 66, 25, 0.8);
+    background: var(--bg-title-menu-solid);
+    background-color: var(--bg-title-menu);
     height: 1.4rem;
     width: 4.6rem;
 
@@ -183,7 +187,7 @@
   }
 
   #menu ul#buttons li:hover {
-    height: 7rem;
+    height: 7.2rem;
     background: none;
     width: 5.5rem;
   }
@@ -206,13 +210,19 @@
 
   /* com hover */
   #menu ul#buttons li a:hover {
-    height: 7rem;
-    padding: 0rem .5rem .5rem;
-    border: solid .1rem #fff;
+    background: var(--bg-frame-menu);
+    box-shadow: var(--shadow7);
 
-    background: #ffffff40;
-    border-image: linear-gradient(to top, #ffffffbf, #e3b97ba1) 0.5;
-    box-shadow: -2px 2px 1px #ffffff69;
+    position: relative;
+    top: -0.5rem;
+
+    height: 7rem;
+    width: max-content;
+    padding: 0rem 0.2rem 0.8rem;
+
+    border: solid 0.1rem #fff;
+    border-image: linear-gradient(to top, rgba(255, 255, 255, 0.749), rgba(227, 185, 123, 0.631)) 0.5;
+    color: var(--txt-title);
   }
 
   /* sem hover */
@@ -220,11 +230,11 @@
     position: fixed;
     top: .6rem;
 
-    color: #fff;
+    color: var(--txt-header);
     font-size: 1rem;
     font-family: var(--font-title-header);
     font-weight: 500;
-    text-shadow: -2px 2px 2px rgb(70 40 9);
+    text-shadow: var(--shadow2);
 
     padding: 0 0.5rem 0;
     overflow: hidden;
@@ -234,12 +244,13 @@
   /* com hover */
   #menu ul#buttons li a p:hover {
     position: fixed;
-    top: .75rem;
+    top: .6rem;
 
     padding: 0 0 0.5rem;
     font-size: 1rem;
-    color: #032;
-    text-shadow: -1px 1px 3px #fff;
+    font-weight: 600;
+    color: var(--text-title);
+    text-shadow: var(--shadow1);
     overflow: hidden;
     background: none;
   }
@@ -354,12 +365,18 @@
     margin: 0;
   }
 
+  main#content-area {
+    padding-bottom: 0;
+  }
+
   .container section {
-    background-color: rgba(255, 255, 255, .8);
+    background-color: var(--bg-section);
+    box-shadow: var(--shadow3);
+
     display: flex;
     flex-direction: column;
     margin: 0;
-    box-shadow: -4px 4px 4px rgb(0 0 0 / 40%);
+    margin-bottom: 1rem;
   }
 
   .container section p {
@@ -368,7 +385,7 @@
 
   .container h1 {
     font-size: 1.4rem;
-    box-shadow: -4px 4px 4px rgb(0 0 0 / 40%);
+    box-shadow: var(--shadow3);
     padding: 0.3rem;
   }
 
@@ -385,8 +402,8 @@
     padding: 0;
     margin: 0;
 
-    background-color: #fff;
-    box-shadow: -4px 4px 4px 0px rgb(0 0 0 / 40%);
+    background-color: var(--bg-section-solid);
+    box-shadow: var(--shadow3);
     height: max-content;
     width: auto;
 
@@ -397,7 +414,7 @@
     content: ' ';
     width: auto;
     height: 100%;
-    background-color: #776e154a;
+    background-color: var(--bg-frame-section);
 
     position: absolute;
     z-index: 0;
@@ -465,7 +482,7 @@
 
   .container aside main p {
     display: block;
-    color: #000;
+    color: var(--txt-p);
     font-size: 1rem;
     font-family: var(--font-link);
   }
@@ -475,7 +492,7 @@
     TEXT-DECORATION: underline;
     font-size: 1rem;
     font-family: var(--font-title-section);
-    top: 0.5rem;
+    top: 0;
     position: absolute;
     margin: 0 auto;
   }
@@ -513,16 +530,18 @@
     z-index: 1;
     background: rgb(255 255 255 / 50%);
     border-radius: 0.4rem;
-    padding: 0.25rem;
-    transform: translateY(-0.5rem);
+    padding: 0.5rem;
+    transform: translateY(-1rem);
+    width: max-content;
     margin-bottom: -1rem;
+    justify-self: center;
   }
 
   aside .social-media li img {
     margin: 0;
     height: 2rem;
     border-radius: 0.5rem;
-    box-shadow: -4px 4px 4px -4px rgb(0 0 0 / 40%);
+    box-shadow: var(--shadow5);
   }
 
   aside .social-media li img:hover,
@@ -559,7 +578,7 @@
     width: auto;
     height: max-content;
     overflow: hidden;
-    margin: 1rem 0;
+    margin: 1rem 0 0;
     padding: 2.5rem 0 .5rem;
 
     display: grid;
@@ -592,7 +611,8 @@
 
   .container aside ul#docs-notion img {
     width: 2rem;
-    margin: 0 0 0.5rem;
+    margin: 0;
+
   }
 
   /*nthchild pra nomear 1 a 1*/
@@ -616,6 +636,10 @@
     overflow: hidden;
   }
 
+  aside footer a {
+    padding: 0;
+  }
+
   aside footer p {
     font-size: 1rem;
     overflow: hidden;
@@ -624,8 +648,18 @@
 
   aside footer img {
     height: 2.5rem;
-    margin: 0.5rem;
+    margin: 0.5rem 0 0;
     width: auto;
+  }
+
+  aside abbr {
+    height: max-content;
+    transition: .2s;
+    text-decoration: none;
+  }
+
+  abbr:hover {
+    filter: brightness(1.25);
   }
 
 
