@@ -94,7 +94,7 @@
   }
 
   div#title::before {
-    content: ".";
+    content: " ";
     width: auto;
     height: 16rem;
     background: var(--bg-header);
@@ -126,9 +126,9 @@
     background-color: var(--bg-title-menu);
     box-shadow: var(--shadow4);
 
-    font-family: var(--font-title-header);
+    font-family: var(--font-title-h1);
     font-size: 2rem;
-    color: var(--font-title-header);
+    color: var(--font-title-h1);
 
     position: relative;
     top: 11rem;
@@ -232,7 +232,7 @@
 
     color: var(--txt-header);
     font-size: 1rem;
-    font-family: var(--font-title-header);
+    font-family: var(--font-title-h1);
     font-weight: 500;
     text-shadow: var(--shadow2);
 
@@ -644,6 +644,7 @@
     font-size: 1rem;
     overflow: hidden;
     margin-bottom: 1rem;
+    color: var(--txt-p);
   }
 
   aside footer img {

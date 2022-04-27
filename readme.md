@@ -42,3 +42,83 @@
 Testes e combinações de aprendizado.
 
 ---
+  /* Set header */
+  --bg-title-menu-solid: rgb(40, 54, 21);
+  --bg-title-menu: rgba(40, 54, 21, .8);
+
+  --bg-header-solid: rgb(113, 133, 55);
+  --bg-header: rgba(113, 133, 55, 0.388);
+  --bg-img-header: url("../_img/bgs-logo/bg-header.png");
+
+  /* Set frames */
+  --bg-frame-solid: rgb(137, 149, 102);
+  --bg-frame-menu: rgba(255, 255, 255, 0.251);
+  --bg-frame-section: rgba(119, 110, 21, 0.29);
+
+  /* Set container */
+  --bg-container-solid: rgba(15, 66, 25, 0.8);
+  --bg-img-container: url("../_img/bgs-logo/bg-header.png");
+
+  --bg-section-solid: rgb(218, 218, 218);
+  --bg-section: rgba(255, 255, 255, .8);
+
+  /* Set mobile */
+  --bg-menu-mobile: ;
+  --bg-mobile-solid: rgb(15, 66, 25);
+  --bg-img-mobile: url("../_img/bgs-logo/bg-solo-mobile.png");
+
+
+  /* Set txt */
+  --txt-header: rgb(240, 248, 255);
+  --txt-p: #000;
+  --txt-title: rgb(35, 75, 25);
+
+  --txt-more: rgb(0, 5, 66);
+  --txt-more-shadow: ;
+
+  /* Set shadow */
+  --shadow1: -1px 1px 3px #fff;
+  --shadow2: -2px 2px 2px rgb(70 40 9);
+  --shadow3: -4px 4px 4px rgba(0 0 0 / 40%);
+  --shadow4: -4px 4px 4px rgb(0 0 0 / 80%);
+  --shadow5: 0 2px 4px black;
+  --shadow6: -4px 0px 4px #000;
+  --shadow7: -2px 2px 1px #ffffff69;
+
+  /* Set fonts */
+  --font-title-h1: 'Encode Sans SC', sans-serif;
+  --font-content-p: 'Poppins', sans-serif;
+  --font-link: 'Montserrat', sans-serif;
+
+  /* Test gradient */
+  --gradient: linear-gradient(35deg, rgba(137, 149, 102, 1) 0%, rgba(113, 133, 55, 1) 50%, rgba(40, 54, 21, 1) 100%);
+
+  --gradient1: linear-gradient(200deg, rgba(15, 65, 25, 1) 0%, rgba(40, 54, 21, 1) 45%, rgba(113, 133, 55, 1) 100%);
+
+  --gradient2: linear-gradient(30deg, rgba(15, 66, 25, 1) 5%, rgba(40, 54, 21, 1) 50%, rgba(0, 5, 66, 1) 95%);
+   **dark-menu**
+  --gradient3: linear-gradient(15deg, rgba(15, 66, 25, 1) 0%, rgba(35, 75, 75, 1) 45%, rgba(66, 55, 117, 1) 100%);
+
+  --gradient4: linear-gradient(15deg, rgba(254, 255, 108, 1) 0%, rgba(244, 154, 154, 1) 45%, rgba(66, 55, 117, 1) 100%);
+
+
+  bg-solo-desk.png
+  bg-header.png
+
+  bg-solo-start-mobile.png
+
+
+background: rgb(244 154 154);
+linear-gradient(15deg, rgba(254,255,108,1) 0%, rgba(244,154,154,1) 45%, rgba(66,55,117,1) 100%);
+
+background: rgb(15,66,25);
+background: linear-gradient(15deg, rgba(15,66,25,1) 0%, rgba(35,75,25,1) 45%, rgba(66,55,117,1) 100%);
+
+background: rgb(15,66,25);
+background: linear-gradient(30deg, rgba(15,66,25,1) 5%, rgba(40,54,21,1) 50%, rgba(0,5,66,1) 95%);
+
+background: rgb(15,65,25);
+background: linear-gradient(200deg, rgba(15,65,25,1) 0%, rgba(40,54,21,1) 45%, rgba(113,133,55,1) 100%);
+
+background: rgb(137,149,102);
+background: linear-gradient(35deg, rgba(137,149,102,1) 0%, rgba(113,133,55,1) 50%, rgba(40,54,21,1) 100%);
