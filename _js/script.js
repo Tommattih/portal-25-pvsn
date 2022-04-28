@@ -18,24 +18,35 @@ window.addEventListener('resize', function () {
 });
 
 //////////color mode
+const changeMode = document.querySelector("html");
+
+function change(){
+  if(changeMode.classList.contains('dark')){
+    changeMode.classList.remove('dark');
+    // alert("cavalo preto");        
+  }else{
+    changeMode.classList.add('dark');
+    // alert("cavalo branco");    
+  }
+}
+
 function darkLight(){
-let colorMode = document.querySelector("#button-mode-desktop");
 const sunMode = document.querySelector(".sun-theme");
 const moonMode = document.querySelector(".moon-theme");
 
-  if(colorMode.classList.contains('dark')){
-    colorMode.classList.remove('dark');
+  if(changeMode.classList.contains('dark')){
     moonMode.classList.remove('switch');
     sunMode.classList.add('switch');
-    alert("dark ^^");
+    // alert("dark ^^");
       
   }else{
-    colorMode.classList.add('dark');
     moonMode.classList.add('switch');
     sunMode.classList.remove('switch');
-    alert("light ^^");
+    // alert("light ^^");
   }
+  change()
 }
+
 
 ////////////menu
 function openClose(){

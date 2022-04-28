@@ -42,6 +42,8 @@
 Testes e combinações de aprendizado.
 
 ---
+  --preloader: rgb(58, 67, 21);
+
   /* Set header */
   --bg-title-menu-solid: rgb(40, 54, 21);
   --bg-title-menu: rgba(40, 54, 21, .8);
@@ -58,9 +60,13 @@ Testes e combinações de aprendizado.
   /* Set container */
   --bg-container-solid: rgba(15, 66, 25, 0.8);
   --bg-img-container: url("../_img/bgs-logo/bg-header.png");
+  --bg-img-container-mobile: url(../_img/bgs-logo/bg-solo-mobile.png);
+
 
   --bg-section-solid: rgb(218, 218, 218);
   --bg-section: rgba(255, 255, 255, .8);
+  --bg-section1: rgba(175, 175, 160, .8);
+  --bg-section2: rgba(255, 255, 255, 0.6);
 
   /* Set mobile */
   --bg-menu-mobile: ;
@@ -84,6 +90,11 @@ Testes e combinações de aprendizado.
   --shadow5: 0 2px 4px black;
   --shadow6: -4px 0px 4px #000;
   --shadow7: -2px 2px 1px #ffffff69;
+
+  --shadow8: -3px 3px 3px rgb(0 0 0 / 40%);
+  --shadow9: -2px 2px 4px -1px rgb(10 10 10 / 40%);
+  --shadow0: ;
+
 
   /* Set fonts */
   --font-title-h1: 'Encode Sans SC', sans-serif;
@@ -122,3 +133,69 @@ background: linear-gradient(200deg, rgba(15,65,25,1) 0%, rgba(40,54,21,1) 45%, r
 
 background: rgb(137,149,102);
 background: linear-gradient(35deg, rgba(137,149,102,1) 0%, rgba(113,133,55,1) 50%, rgba(40,54,21,1) 100%);
+
+
+
+
+////////////Preloader
+const preloader = document.querySelectorAll('#preloader');
+
+function preload() {
+  document.getElementById("preloader").classList.add('hidden');
+}
+
+//////////change type menu
+window.addEventListener('resize', function () {
+  //var altura = window.innerHeight;
+  var largura = window.innerWidth;
+
+  if (largura <= 768) {
+      document.querySelector("#menu").classList.add('hidden');
+  }else{
+    document.querySelector("#menu").classList.remove('hidden');
+  }
+});
+
+//////////color mode
+function darkLight(){
+const colorMode = document.querySelector("#button-mode-desktop");
+const sunMode = document.querySelector(".sun-theme");
+const moonMode = document.querySelector(".moon-theme");
+
+  if(colorMode.classList.contains('dark')){
+    colorMode.classList.remove('dark');
+    moonMode.classList.remove('switch');
+    sunMode.classList.add('switch');
+    alert("dark ^^");
+      
+  }else{
+    colorMode.classList.add('dark');
+    moonMode.classList.add('switch');
+    sunMode.classList.remove('switch');
+    alert("light ^^");
+  }
+}
+
+function change(){
+  const changeMode = document.querySelector("html");
+  const buttonMobileMode = document.querySelector(".button-mode-mobile");
+  
+  if(changeMode.classList.contains('dark')){
+    changeMode.classList.remove('dark');
+    alert("cavalo preto");        
+  }else{
+    changeMode.classList.add('dark');
+    alert("cavalo branco");    
+  }
+}
+
+////////////menu
+function openClose(){
+let menuMobile = document.querySelector("#menu");
+  if (menuMobile.classList.contains('hidden') == true){
+    menuMobile.classList.remove('hidden');
+
+  }else{
+    menuMobile.classList.add('hidden');
+  }
+}

@@ -215,10 +215,11 @@
 
     position: relative;
     top: -0.5rem;
+    left: -0.6rem;
 
-    height: 7rem;
     width: max-content;
-    padding: 0rem 0.2rem 0.8rem;
+    height: 7rem;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
 
     border: solid 0.1rem #fff;
     border-image: linear-gradient(to top, rgba(255, 255, 255, 0.749), rgba(227, 185, 123, 0.631)) 0.5;
@@ -612,11 +613,13 @@
   .container aside ul#docs-notion img {
     width: 2rem;
     margin: 0;
-
   }
 
-  /*nthchild pra nomear 1 a 1*/
-
+  .container ul#docs-notion li a,
+  .container ul#docs-notion li a abbr,
+  .container ul#docs-notion li a abbr p {
+    font-size: 1rem;
+  }
 
 
   /* ASIDE FOOTER */
