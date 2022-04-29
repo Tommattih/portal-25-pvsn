@@ -180,7 +180,7 @@ img#button-open-menu {
 
 /*open menu*/
 #menu img#logo-open-menu {
-  margin: 1.5rem 0 1rem;
+  margin: 1rem 0 0rem;
   width: 4.5rem;
   box-shadow: var(--shadow3);
   border-radius: 4rem;
@@ -201,15 +201,15 @@ img#button-open-menu {
 }
 
 #menu h1#loteamento {
-  font-size: 1.8rem;
-  margin: 0rem 0rem;
-  padding: 1rem;
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  padding: .5rem 1rem;
 }
 
 #menu h2#area {
   font-size: 1.4rem;
   border-bottom: 0.15rem solid var(--txt-header);
-  padding: 0.75rem 0rem 2rem;
+  padding: 0.75rem 0rem 1rem;
   margin: 0 1.5rem;
 }
 
@@ -220,7 +220,7 @@ img#button-open-menu {
   /* grid-gap: 1rem 1rem; */
   padding: 0rem 1.5rem;
   height: 100%;
-  margin: 2rem 0;
+  margin: 1rem 0;
   justify-content: space-around;
 }
 

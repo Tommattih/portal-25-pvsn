@@ -80,7 +80,8 @@ Testes e combinações de aprendizado.
   --txt-title: rgb(35, 75, 25);
 
   --txt-more: rgb(0, 5, 66);
-  --txt-more-shadow: ;
+  --txt-more1: rgb(7, 13, 82);
+  --txt-more-shadow: 0px 0px 5px #c0ff00f0;
 
   /* Set shadow */
   --shadow1: -1px 1px 3px #fff;
