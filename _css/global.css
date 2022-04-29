@@ -41,10 +41,11 @@
   /* Set txt */
   --txt-header: rgb(240, 248, 255);
   --txt-p: rgb(0, 0, 0);
-  --txt-title: rgb(35, 75, 25);
+  --txt-title: rgb(35, 50, 10);
 
   --txt-more: rgb(0, 5, 66);
-  --txt-more-shadow: ;
+  --txt-more1: rgb(7, 13, 82);
+  --txt-lime-shadow: 0px 0px 5px #c0ff00f0;
 
   /* Set shadow */
   --shadow1: -1px 1px 3px #fff;
@@ -188,7 +189,7 @@ img#button-open-menu {
 #menu #title {
   margin-top: 1rem;
   text-align: center;
-  height: 100%;
+  height: max-content;
 }
 
 #menu h1,
@@ -256,7 +257,7 @@ button.mode-mobile {
 
 /*////////////////// ASIDE //////////////////*/
 .hidden {
-  opacity: 0;
+  display: none;
 }
 
 /*////////////////// MAIN //////////////////*/
@@ -295,7 +296,7 @@ main#content-area {
   justify-content: center;
   margin-top: 0;
 
-  color: var(--bg-title-menu-solid);
+  color: var(--txt-title);
   font-family: var(--font-title-h1);
   font-weight: 400;
   font-size: 1.25rem;
@@ -317,8 +318,8 @@ main#content-area {
 .container footer a {
   padding-bottom: 1rem;
   place-self: center;
-  color: rgb(7, 13, 82);
-  text-shadow: 0px 0px 5px #c0ff00f0;
+  color: var(--txt-more1);
+  text-shadow: var(--txt-lime-shadow);
 }
 
 /*aside*/
