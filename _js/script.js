@@ -5,18 +5,6 @@ function preload() {
   document.getElementById("preloader").classList.add('hidden');
 }
 
-//////////change type menu
-window.addEventListener('resize', function () {
-  //var altura = window.innerHeight;
-  var largura = window.innerWidth;
-
-  if (largura <= 768) {
-      document.querySelector("#menu").classList.add('hidden');
-  }else{
-    document.querySelector("#menu").classList.remove('hidden');
-  }
-});
-
 //////////color mode
 const changeMode = document.querySelector("html");
 
@@ -57,4 +45,25 @@ let menuMobile = document.querySelector("#menu");
   }else{
     menuMobile.classList.add('hidden');
   }
+}
+
+//////////change type menu
+function size() {
+  window.addEventListener('load', function () {
+    //var altura = window.innerHeight;
+  var largura = window.innerWidth;
+  const menu = document.getElementById("menu")
+  
+  if (largura <= 768) {
+      menu.classList.add('hidden');
+  }else{
+    menu.classList.remove('hidden');
+  }
+});
+}
+
+//function open(event){
+//  openMenu.addEventListener('click', classList.contains('hidden'))}
+if (window.screen.width <= 1024 && window.screen.height >= 768) {
+  // Resolution is 1024x768 or above
 }

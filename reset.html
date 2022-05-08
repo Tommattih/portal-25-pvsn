@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="PT-BR" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="bbPU3z2XnrKyz1ePvdFmOyxYy-qIXn4BpaNsAPoe8Vk" />
+    <!-- PAGE DESCRIPTION -->
+    <meta name="description" content="Este é o Portal PVSN 25 (Parque Vitória do Sol Nascente - 25ª área) o registro do nascimento e construção de um bairro do zero. Por uma vizinhança melhor.">
+    
+    <!-- ICON -->
+    <link rel="shortcut icon" href="./_img/bgs-logo/ico-medal-pvsn.png" type="image/x-icon">
+    <title>Portal PVSN (25ª Área)</title>
+
+
+    <!-- FONTS -->
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./_css/reset.css">
+    <link rel="stylesheet" href="./_css/reset-desk.css">
+    
+    <!-- JS -->
+</head>
+<body onload="preload();">
+    <script src="./_js/script.js"></script>
+    <div id="preloader" class="">
+        <span>
+            <img src="./_img/bgs-logo/ico-pvsn-25-text-start-mobile.png" class="border" alt="circulo preto com a planta do loteamento ao centro e sigla e número da área desfocado ao fundo">
+        </span>
+        
+        <span>
+            <img src="./_img/bgs-logo/icon-PVSN-25-start-mobile.png"  class="center" alt="Parque Vitoria Do Sol Nascente escrito em forma circular">
+        </span>
+    </div>
+
+    <div class="container">
+        <!-- HEADER BLOCK -->
+        <header class="header">
+            <div class="openMenu" onclick="openClose()">
+                <img src="./_img/buttons/ico-pvsn-25-mobile-open-menu.png" alt="Botão com icone PVSN 25, circulo preto com silhueta do loteamento desenhado ao centro">
+                <p>MENU</p>
+            </div>
+            <div class="menuMobile hidden"> <!-- colocar class hidden depois-->
+                <div class="openCloseMenu" onclick="openClose()">
+                    <span class="closeMenu"></span>
+                </div>
+                <div class="nav navbuttons">
+                    <nav>
+                        <ul id="buttons"  class="navbuttons">
+                            <li class="glassmorfism"><a href="./news.html"><img src="./_img/icons/header/ico-news.png" alt=""><p>Notícias</p></a></li>
+                            <li><a href="./services.html"><img src="./_img/icons/header/ico-services.png" alt=""><p>Serviços</p></a></li>
+                            <li><a href="./faq.html"><img src="./_img/icons/header/ico-faq.png" alt=""><p>Dúvidas</p></a></li>
+                            <li><a href="./enviroment.html"><img src="./_img/icons/header/ico-planet.png" alt=""><p>DoBem</p></a></li>
+                            <li><a href="./galery.html"><img src="./_img/icons/header/ico-galery.png" alt=""><p>Galeria</p></a></li>
+                            <li><a href="./history.html"><img src="./_img/icons/header/ico-history.png" alt=""><p>História</p></a></li>
+                            <li><a href="./blueprints.html"><img src="./_img/icons/header/ico-plan.png" alt=""><p>Planta</p></a></li>
+                            <li><a href="./maps.html" on=""><img src="./_img/icons/header/ico-map.png" alt=""><p>Rotas</p></a></li>
+                            <li class="toggle-theme mobile"><a onclick="change()" class="button-mode-mobile"><img src="./_img/icons/header/button-togle-mode.png" alt=""><p>Modo</p></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="area">
+                    <h2 id="area">Portal da 25ª área</h2>
+                </div>
+                <div class="modemode" onclick="darkLight()">
+                    <div class="sun-theme" class="">
+                        <img src="./_img/icons/header/button-sun.png" alt="botão de sol para visualizar em light-mode">
+                    </div>
+                    <div class="moon-theme" class="switch">
+                        <img src="./_img/icons/header/button-moon.png" alt="botão de lua para visualizar em dark-mode">
+                    </div>
+                </div>
+                <div class="logo">
+                    <div class="text-out">
+                        <img src="./_img/bgs-logo/ico-pvsn-25-text-keyframe.png" alt="texto circular laranja escrito 'Parque Vitória do Sol Nascente, 25ª área' contornando o logo da página (próxima imagem)">
+                    </div>
+                    <div class="front-map">
+                        <img src="./_img/bgs-logo/icon-PVSN-25-map-keyframe.png" alt="círculo preto com silhueta do loteamento em destaque ao centro">
+                    </div>
+                    <div class="front-text">
+                        <img src="./_img/bgs-logo/ico-pvsn-25-keyframe.png" alt="círculo preto com 'PVSN 25ª' em destaque ao centro">
+                    </div> 
+
+                    <img id="logo-open-menu" class="mobile" src="./_img/buttons/ico-pvsn-25-mobile-menu.png" alt="circulo preto com planta do loteamento desenhada em verde ao centro"> <!-- maybe change -->
+                </div>
+                <div class="nameArea">
+                    <h1 id="loteamento">Parque Vitória do Sol Nascente</h1>
+                </div>
+            </div>
+        </header>
+        
+        <!-- WINDOW BLOCK -->
+        <main class="window">
+<!-- formato do container, no import do /news colocar janela de preview igual ao 2013  -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium alias nostrum enim, possimus officia quidem hic quis optio, veniam laboriosam doloribus voluptates perspiciatis architecto quos saepe expedita. Soluta, rem non?</p>
+        </main>
+
+        <aside class="aside">
+            <div class="imgSelect page desktop">
+                <img src="./_img/icons/aside/medal-pvsn.png" alt="Medalhão circular vazado com o decalque do formato do loteamento ao centro">
+            </div>
+            <nav>
+                <ul class="socialMedia">
+                    <li><a href="https://discord.gg/ABEhtET4dC" target="blank"><img src="./_img/icons/ico-discord.png" alt="botão para Portal PVSN no discord"><p>Discord</p></a></li>
+                    <li><a href="https://chat.whatsapp.com/K4JaFotEZSWC7EAtq2xn2y" target="blank"><img src="./_img/icons/ico-whatsapp.png" alt="botão para grupo no whatsapp"><p>Whatsapp</p></a></li>
+                    <li><a href="https://www.instagram.com/pvsn.25/" target="blank"><img src="./_img/icons/ico-instagram.png" alt="botão para Portal PVSN no instagram"><p>Instagram</p></a></li>
+                    <li><a href="https://fb.me/PVSN.25" target="blank"><img src="./_img/icons/ico-facebook.png" alt="botão para Portal PVSN no facebook"><p>Facebook</p></a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="utilities">
+                    <li>
+                        <a href="https://docs.google.com/spreadsheets/d/189o1r6BDabCCI_lDz6GeMch8T6TuCLvx_U69waz4OnI/edit?usp=sharing" target="_blank" alt="Planilha com descritivo de materiais de construção necessários em uma obra">
+                            <abbr title="Planilha base de materiais e serviços para fazer orçamento">                            
+                                <img src="./_img/icons/aside/ico-base.png" alt="icone de planilhas com cifrão">
+                                <p>Base</p>
+                            </abbr>
+                        </a>
+                    </li>
+                        
+                    <li>
+                        <a href="https://drive.google.com/file/d/17qEcm0crWzm3HLrvgScMqHbGc5LNFnZm/view?usp=sharing" target="_blank" alt="Documento .DWG com a planta executiva do loteamento">
+                            <abbr title="Baixar a planta executiva do loteamento">
+                                <img src="./_img/icons/aside/ico-dwg.png" alt="icone de arquivo com extensão .DWG"><p>DWG</p>
+                            </abbr>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="today">API</div>
+        </aside>
+        
+        <!-- FOOTER BLOCK -->
+        <footer class="footer">
+            <div class="author">
+                <p>Maio de 2022, Osasco - SP - Brasil</p>
+            </div>
+            <div class="aboutProject">
+                <h3>Sobre o Projeto</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus maxime aliquid praesentium voluptatibus corporis tenetur ipsam, soluta fugit quia. Id vitae sint saepe, eius libero ullam delectus explicabo odio!</p>
+            </div>
+            <div class="aboutDev">
+                <a href="https://www.linkedin.com/in/tommattih/" target="_blank">
+                    <abbr title="Sobre o Desenvolvedor">
+                    <img src="./_img/icons/ico-tommattih.png" alt="icone com um tomate de oculos e cavanhaque"></abbr>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

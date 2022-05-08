@@ -105,8 +105,7 @@
   position: absolute;
   background-size: cover;
   background-color: var(--preloader);
-  background-image: url("../_img/bgs-logo/bg-solo-start-mobile.png");
-  z-index: 1;
+  z-index: 2;
 }
 
 #preloader span img.border {
@@ -156,13 +155,15 @@
   top: 0;
 
   width: 100vw;
+  height: 100vh;
+  /*teste*/
 }
 
 /* switch*/
 span#button-close-menu {
   position: absolute;
   top: 1rem;
-  right: 2rem;
+  left: 2rem;
   text-align: end;
 
   font-size: 1.5rem;
@@ -243,7 +244,7 @@ img#button-open-menu {
 
 #menu ul#buttons li a p {
   color: var(--txt-header);
-  text-shadow: var(--shadow6);
+  text-shadow: var(--shadow5);
 }
 
 #menu ul#buttons li a img {
@@ -256,9 +257,7 @@ button.mode-mobile {
 }
 
 /*////////////////// ASIDE //////////////////*/
-.hidden {
-  display: none;
-}
+
 
 /*////////////////// MAIN //////////////////*/
 /*////////////////// CONTAINER //////////////////*/
@@ -472,8 +471,12 @@ footer p {
   --bg-header-solid: rgb(146, 110, 51);
   --bg-header: rgba(191, 81, 47, 0.388);
 
-  --gradient: linear-gradient(30deg, rgba(15, 66, 25, 1) 5%, rgba(40, 54, 21, 1) 50%, rgba(0, 5, 66, 1) 95%);
+  --gradient: linear-gradient(201deg, rgb(25 15 65) 0%, rgb(55 55 130) 75%, rgb(130 45 74) 100%);
+  /* --gradient: linear-gradient(30deg, rgba(15, 66, 25, 1) 5%, rgba(40, 54, 21, 1) 50%, rgba(0, 5, 66, 1) 95%); */
   --bg-frame-solid: rgb(15, 66, 25);
+  --bg-frame-solid: rgb(50, 45, 90);
 
-  --bg-frame-section: rgba(8, 22, 37, 0.8);
+  --bg-frame-section: rgba(54, 93, 130, 0.3);
+  --shadow3: -4px 4px 4px rgb(250 250 250 / 40%);
+  --shadow5: 0 2px 4px rgba(0, 150, 175, 0.6);
 }

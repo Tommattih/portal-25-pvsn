@@ -14,68 +14,44 @@
   }
 
   /* PRELOADER ================**/
-  /* #preloader .show {
-    position: absolute;
-    z-index: 2;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: none;
-    background-color: #010;
-  } */
-
   #preloader {
     width: 100vw;
     height: 100vh;
     position: absolute;
     background-size: contain;
     background-color: #232618;
-    background-image: url("../_img/bgs-logo/bg-solo-desk.png");
     z-index: 2;
   }
 
-  /* #preloader .show span img.center {
-    position: absolute;
-    padding: 0;
-    z-index: 4;
-    width: 15%;
-    top: 38%;
-    left: 44%;
-  } */
   #preloader span img.center {
-    position: relative;
-    width: 20%;
-    padding: 1rem;
+    position: absolute;
     z-index: 2;
-    top: 37%;
-    left: 17%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 24%;
+    height: auto;
+    /* padding: 0rem; */
   }
 
-  /* #preloader .show span img.border {
-    position: absolute;
-    padding: 0;
-    z-index: 5;
-    width: 23%;
-    height: 35.55%;
-    top: 32%;
-    left: 40%;
-    animation: rotate infinite 3.5s cubic-bezier(0.46, 0.03, 0.52, 0.96);
-  } */
   #preloader span img.border {
-    position: relative;
-    width: 25%;
+    position: absolute;
     padding: 0;
     z-index: 0;
-    top: 40%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 24%;
+    height: auto;
   }
 
-  #preloader.hidden span img.center,
-  #preloader.hidden span img.border,
+  #preloader .hidden span img.center,
+  #preloader .hidden span img.border,
   #preloader.hidden {
-    z-index: -3;
     display: none;
+    z-index: -3;
   }
 
   body::-webkit-scrollbar,
@@ -91,6 +67,7 @@
     display: block;
     z-index: 1;
     color: var(--txt-header);
+    height: 0;
   }
 
   div#title::before {
@@ -183,13 +160,13 @@
     width: 4.6rem;
 
     overflow: hidden;
-    transition: .3s;
+    transition: .15s;
   }
 
   #menu ul#buttons li:hover {
     height: 7.2rem;
     background: none;
-    width: 5.5rem;
+    width: 5rem;
   }
 
   /* sem hover */
@@ -665,7 +642,6 @@
   abbr:hover {
     filter: brightness(1.25);
   }
-
 
   /************* keyframes *************/
   @keyframes rotate {
