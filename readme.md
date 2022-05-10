@@ -204,3 +204,282 @@ let menuMobile = document.querySelector("#menu");
 img png" loading="lazy">
 
 https://grid.layoutit.com/
+
+mobileMain
+´´´
+<div class="container">
+  <div class="header">
+    <div class="openMenu"></div>
+    <div class="socialMedia"></div>
+  </div>
+  <div class="window">
+    <div class="utilities"></div>
+  </div>
+  <div class="footer">
+    <div class="aboutDev"></div>
+    <div class="aboutProject"></div>
+    <div class="author"></div>
+  </div>
+</div>
+´´´
+
+´´´
+  .container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 4fr 1.5fr;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "window window window"
+      "footer footer footer";
+  }
+
+  .header {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "openMenu socialMedia";
+    grid-area: header;
+  }
+
+  .openMenu { grid-area: openMenu; }
+
+  .socialMedia { grid-area: socialMedia; }
+
+  .window {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "."
+      "utilities";
+    grid-area: window;
+  }
+
+  .utilities {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+    grid-area: utilities;
+  }
+
+  .footer {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 1.5fr 0.5fr;
+    gap: 5px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aboutProject"
+      "aboutDev"
+      "author";
+    grid-area: footer;
+  }
+
+  .aboutDev { grid-area: aboutDev; }
+
+  .aboutProject { grid-area: aboutProject; }
+
+  .author { grid-area: author; } 
+  ´´´
+
+menuMobile
+  ´´´
+  <div class="menuMobile">
+  <div class="navButtons"></div>
+  <div class="closeMenu"></div>
+  <div class="logoArea"></div>
+  <div class="dataArea">
+    <div class="numArea"></div>
+    <div class="nameArea"></div>
+  </div>
+</div>
+  ´´´
+  
+  ´´´
+  .menuMobile {  
+    display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 0.5fr 1fr 2fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "closeMenu logoArea logoArea"
+    "dataArea dataArea dataArea"
+    "navButtons navButtons navButtons";
+}
+
+.navButtons {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . .";
+  grid-area: navButtons;
+}
+
+.closeMenu { grid-area: closeMenu; }
+
+.logoArea { grid-area: logoArea; }
+
+.dataArea {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "numArea"
+    "nameArea";
+  grid-area: dataArea;
+}
+
+.numArea { grid-area: numArea; }
+
+.nameArea { grid-area: nameArea; }
+  ´´´
+
+desktopMain
+  ´´´
+  <div class="container">
+  <div class="header">
+    <div class="buttons">
+      <div class="mode"></div>
+      <div class="navButtons"></div>
+    </div>
+    <div class="dataArea">
+      <div class="logoArea"></div>
+      <div class="numArea"></div>
+      <div class="nameArea"></div>
+    </div>
+  </div>
+  <div class="window"></div>
+  <div class="aside">
+    <div class="imgSelect"></div>
+    <div class="socialMedia"></div>
+    <div class="utilities"></div>
+    <div class="today"></div>
+    <div class="onlyViews"></div>
+  </div>
+  <div class="footer">
+    <div class="author"></div>
+    <div class="aboutProject"></div>
+    <div class="aboutDev"></div>
+  </div>
+</div>
+  ´´´
+
+  ´´´
+  .container {  
+    display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  gap: 8px 8px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header"
+    "window aside"
+    "footer footer";
+}
+
+.header {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "buttons"
+    "dataArea"
+    "dataArea";
+  grid-area: header;
+}
+
+.buttons {  
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navButtons mode";
+  grid-area: buttons;
+}
+
+.mode { grid-area: mode; }
+
+.navButtons { grid-area: navButtons; }
+
+.dataArea {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "numArea numArea logoArea"
+    "nameArea nameArea logoArea";
+  grid-area: dataArea;
+}
+
+.logoArea { grid-area: logoArea; }
+
+.numArea { grid-area: numArea; }
+
+.nameArea { grid-area: nameArea; }
+
+.window {
+  justify-self: stretch;
+  grid-area: window;
+}
+
+.aside {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 1.5fr 1fr 0.5fr 0.5fr;
+  gap: 8px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "imgSelect imgSelect"
+    "socialMedia socialMedia"
+    "utilities utilities"
+    "today today"
+    "onlyViews onlyViews";
+  grid-area: aside;
+}
+
+.imgSelect { grid-area: imgSelect; }
+
+.socialMedia { grid-area: socialMedia; }
+
+.utilities { grid-area: utilities; }
+
+.today { grid-area: today; }
+
+.onlyViews { grid-area: onlyViews; }
+
+.footer {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "aboutProject aboutDev"
+    "author author";
+  grid-area: footer;
+}
+
+.author { grid-area: author; }
+
+.aboutProject { grid-area: aboutProject; }
+
+.aboutDev { grid-area: aboutDev; }
+  ´´´

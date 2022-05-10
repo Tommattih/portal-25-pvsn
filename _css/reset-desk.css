@@ -4,6 +4,10 @@
     display: block;
   }
 
+  .mobile {
+    display: none;
+  }
+
   body {
     background: url(../_img/bgs-logo/bg-solo-desk.png);
     background-size: contain;
@@ -13,46 +17,163 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 4fr 1fr;
-    gap: 8px 8px;
+    gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
       "header header"
       "window aside"
       "footer footer";
+    top: 0;
   }
+
 
   .header {
     display: grid;
-    grid-template-columns: 3.5fr 1fr 0.5fr;
-    grid-template-rows: 0.5fr 1fr 1.5fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "buttons"
+      "dataArea"
+      "dataArea";
+    grid-area: header;
+
+    height: 18rem;
+    position: relative;
+    top: 0;
+  }
+
+  .buttonsTop {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navButtons mode";
+    grid-area: buttons;
+
+    position: absolute;
+    top: 1rem;
+    /* z-index: 1; faz nada?*/
+  }
+
+  .mode {
+    grid-area: mode;
+    top: 0;
+    position: fixed;
+    right: 1rem;
+  }
+
+  .navButtons {
+    /* display: grid; =========== redundante*/
+    grid-area: navButtons;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    top: 0;
+    left: 1rem;
+    position: fixed;
+  }
+
+  ul#navbuttons img {
+    display: none;
+  }
+
+  .dataArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "nav logo mode"
-      "area logo mode"
-      "nameArea logo mode";
-    grid-area: header;
+      "numArea numArea logoArea"
+      "nameArea nameArea logoArea";
+    grid-area: dataArea;
+
   }
 
-  .menuMobile {
-    position: relative;
+  .logoArea {
+    grid-area: logoArea;
   }
 
-  .nav {
-    position: fixed;
-    top: 1rem;
-    left: 2rem;
+  .numArea {
+    grid-area: numArea;
+  }
 
+  .nameArea {
+    grid-area: nameArea;
+  }
+
+  .window {
+    justify-self: stretch;
+    grid-area: window;
+  }
+
+  .aside {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 8px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 1fr 0.5fr 0.5fr;
+    gap: 8px 0px;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "imgSelect imgSelect"
+      "socialMedia socialMedia"
+      "utilities utilities"
+      "today today"
+      "onlyViews onlyViews";
+    grid-area: aside;
+
+    background-color: var(--bg-container);
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .imgSelect {
+    grid-area: imgSelect;
+  }
+
+  .socialMedia {
+    grid-area: socialMedia;
+  }
+
+  .utilities {
+    grid-area: utilities;
+  }
+
+  .today {
+    grid-area: today;
+  }
+
+  .onlyViews {
+    grid-area: onlyViews;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". . . . . . . .";
-    grid-area: nav;
+      "aboutProject aboutDev"
+      "author author";
+    grid-area: footer;
   }
 
+  .author {
+    grid-area: author;
+  }
+
+  .aboutProject {
+    grid-area: aboutProject;
+  }
+
+  .aboutDev {
+    grid-area: aboutDev;
+  }
+
+  /* =========================================== */
 
   nav.nav ul {
     display: flex;
