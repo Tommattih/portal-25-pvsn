@@ -1,6 +1,8 @@
 :root {
   font-size: 62.5%;
   --bg-container: #eae;
+  --main-color: #83895d;
+  --main-pair-color: rgba(99, 119, 60, 0.8);
 }
 
 * {
@@ -9,6 +11,7 @@
   padding: 0;
   font-size: 1.6rem;
   list-style: none;
+  font-size: 1.5rem;
 }
 
 .desktop,
@@ -87,6 +90,11 @@ body {
   grid-template-areas:
     ". .";
   grid-area: utilities;
+}
+
+.socialMedia img,
+.utilities img {
+  height: 4rem;
 }
 
 .footer {
