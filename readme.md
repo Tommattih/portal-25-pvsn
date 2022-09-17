@@ -3,11 +3,11 @@
 **Cores da Página**
 
     bg: #455943;
-    title: #e8beac;
+    title: #D98E73;
     bgmain: #f5f5f5;
     section: #fff;
     text: #212b20;
-    shaddow: #000;
+    shaddow: #401A1A;
 
 **Updates**
 
