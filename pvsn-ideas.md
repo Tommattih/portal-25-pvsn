@@ -80,7 +80,7 @@
   * MENU DE BUSCA
 
 - [ ] ***=> DÚVIDAS*** (faq/other repo)
-  * AREA DE LOGIN DOS MORADORES~?~
+  * AREA DE LOGIN DOS MORADORES~?~validação de forms use methods
 
 - [ ] ***=> PAINEL DE SERVIÇOS***
    * FILTROS & SEÇÕES: (complete info only for back-end)

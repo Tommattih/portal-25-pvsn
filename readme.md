@@ -137,6 +137,15 @@ background: linear-gradient(35deg, rgba(137,149,102,1) 0%, rgba(113,133,55,1) 50
 
 
 
+grid:
+  header
+  main aside
+  /*main add*/
+  footer
+
+
+
+
 
 ////////////Preloader
 const preloader = document.querySelectorAll('#preloader');

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POSTMAKER - MTL</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    /* caption*/
+    h1 {
+      text-align: center;
+      text-shadow: 2px 2px 20px yellowgreen;
+    }
+    form {
+      border: solid 5px #998;
+      padding: 1rem;
+      width: max-content;
+      margin: 1rem auto;
+      max-width: 30rem;
+    }
+    input{
+      margin: .5rem 1rem;
+    }
+    input#content {
+      min-height: 5rem;
+    }
+    /* post*/
+    section {
+      margin: 1rem auto;
+      background: #c8c8b5;
+      padding: 1rem 2rem;
+      color: #3e3a0d99;
+      max-width: 60vw;
+      border-radius: 8px;
+      box-shadow: -2px 2px 8px #00000099;
+    }
+    h2 {
+      font-size: 2.5rem;
+      color: #073918;
+    }
+    p{
+      color: #000;
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>POSTMAKER</h1>
+  <form id='postnumber'action="">
+    <label for="section">Tipo de post:
+      <input type="checkbox" name="tips" id="section" checked> tips
+      <input type="checkbox" name="urbanization" id="section"> urbanization
+      <input type="checkbox" name="meets" id="section"> meets
+    </label>
+    <BR>
+    <label for="datetoday">Data do post:
+      <input type="datetime-local" name="" id="datetoday">
+    </label>
+    <BR>
+    <label for="title">Título:
+      <input type="text" name="" id="title" size="55">
+    </label>
+    <br>
+    <label for="content">Conteúdo:
+      <input type="text" name="" id="content" size="55" placeholder="Enviar deve atribuir os valores formatados em dua devida sessão.">
+    </label>
+    <br>
+    <input type="file" id="imgcontent">
+    <br>
+    <button type="submit" onclick="postar()">Postar</button>
+  </form>
+
+  <div id="postado">
+    <section recebe tipo id='' >
+      <article recebe idData>
+        <!-- dataPost(Dia da semana, dia do mes, do ano) -->
+        Quarta-feira, 17 de Agosto de 2022
+        <h2 recebe titulo>Seu título aqui</h2>
+        <img src="" alt="ilustração do tema" recebe arquivo>
+        <p recebe conteudo>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquid corporis vel numquam temporibus eligendi aperiam repellendus dignissimos aut sint dolor ex vero minima maiores modi in soluta, praesentium eos. <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit tenetur sequi dolor non voluptates dolorem ut, quibusdam, at dolorum ullam, omnis asperiores ad nulla corporis voluptate quos autem nisi amet. <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reprehenderit aperiam a voluptas placeat eaque vero adipisci sequi quaerat cumque accusantium dolor ullam quia vitae consequuntur voluptate, consequatur provident nihil?
+        </p>
+      </article>
+    </section>
+
+  </div>
+
+
+  <script>
+  //  var DATAsql = [idData[], titles[], data[], tipo[], conteudo[]]
+  var newpost = {id, titles, data, tipo, conteudo} //object
+  var posts = []
+  posts.push(newpost)
+  postExist()
+  function postar({
+  /*arrays recebem conteudo de suas respectivas variaveis de acordo com o id no html
+  ex:
+  let id += document.getElementById('id') 
+  if (newpost in history[value]) {
+    console.log(exist)
+  } else {
+    //atribuir valores a newpost
+  }*/ 
+})
+  </script>
+</body>
+</html>

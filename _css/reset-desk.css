@@ -80,6 +80,42 @@
     display: none;
   }
 
+
+  #navbuttons li {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.5) 20%);
+    border: 0.15rem solid;
+    border-image: linear-gradient(190deg, rgba(255, 255, 255, 1) 0%, rgba(135, 137, 93, 1) 50%, rgba(100, 120, 60) 25%) .5;
+
+    text-align: center;
+    padding: 0 0.5rem;
+
+    position: relative;
+    top: 0.5rem;
+    left: 1.5rem;
+
+    transition: .25s ease-in-out;
+  }
+
+  #navbuttons li:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.25) 100%);
+    box-shadow: -0.02rem 0.025rem 0.25rem rgba(0, 0, 0, 0.5);
+  }
+
+
+
+  #navbuttons p {
+    color: #3A4315;
+    transition: .25s ease-in-out;
+
+  }
+
+  #navbuttons p:hover {
+    color: #000;
+    text-shadow: 0rem 0rem 0rem #fff;
+    filter: brightness(0.5);
+  }
+
   .dataArea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -147,126 +183,6 @@
 
   .onlyViews {
     grid-area: onlyViews;
-  }
-
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.5fr 0.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "aboutProject aboutDev"
-      "author author";
-    grid-area: footer;
-  }
-
-  .author {
-    grid-area: author;
-  }
-
-  .aboutProject {
-    grid-area: aboutProject;
-  }
-
-  .aboutDev {
-    grid-area: aboutDev;
-  }
-
-  /* =========================================== */
-
-  nav.nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: .5rem;
-  }
-
-  nav.nav li {
-    cursor: pointer;
-    transition: .4s ease-in-out;
-    width: max-content;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 0 .5rem;
-  }
-
-  nav.nav li:hover {
-    /* From https://css.glass            =====> bg need gradient on var*/
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 5px;
-    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(1.5px);
-    -webkit-backdrop-filter: blur(1.5px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-  }
-
-  nav.nav li img {
-    display: none;
-  }
-
-  .area {
-    grid-area: area;
-  }
-
-  .mode {
-    grid-area: mode;
-    display: inline-block;
-  }
-
-  .logo {
-    grid-area: logo;
-  }
-
-  .nameArea {
-    grid-area: nameArea;
-  }
-
-  .window {
-    justify-self: stretch;
-    grid-area: window;
-  }
-
-  aside .aside {
-    /*nao faz o q deveria fazer*/
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1.5fr 1.5fr 1fr 0.5fr;
-    gap: 8px 0px;
-    grid-template-areas:
-      "imgSelect imgSelect"
-      "socialMedia socialMedia"
-      "utilities utilities"
-      "today today";
-    grid-area: aside;
-  }
-
-  .imgSelect {
-    grid-area: imgSelect;
-  }
-
-  .socialMedia {
-    grid-area: socialMedia;
-  }
-
-  .socialMedia {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 5px 5px;
-    grid-template-areas:
-      ". ."
-      ". .";
-    grid-area: socialMedia;
-  }
-
-  .utilities {
-    grid-area: utilities;
-  }
-
-  .today {
-    grid-area: today;
   }
 
   .footer {
