@@ -1,3 +1,17 @@
+**Testes e testes**
+* index.html 
+`versão que segue o planejamento do figma`
+* reset.html 
+`barra de nav boa para desktop, marcações, quebrado`
+* rascunho.html 
+`textos para preencher as marcações`
+* poster.html 
+`como montar um atalho para formatar os posts... integração com SQL/já servindo de backup e localizador para pesquisas internas, tópicos`
+
+* pvsn-ideas . md
+`Complilado de ideias a implementar`
+ ---
+
 ## Portal 25ª PVSN -> [tommattih.github.io/portal-25-pvsn](https://tommattih.github.io/portal-25-pvsn)
 ### Versão Abril/2022
 `:root{
