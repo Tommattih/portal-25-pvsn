@@ -11,6 +11,8 @@
 
 **Updates**
 
+- Correções de tamanho de fonte e espaçamento.
+
 - Ajustes nas informações e estrutura de apresentação.
 
 - Conclusão da primeira etapa layout
@@ -22,7 +24,6 @@
 - Cor de fundo
 
 - Adição de imagens, notícias, links e contador
-
 
 **Referência**
 
