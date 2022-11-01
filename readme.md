@@ -11,6 +11,8 @@
 
 **Updates**
 
+- Inclusão de _Meta descripion_
+
 - Correções de tamanho de fonte e espaçamento.
 
 - Ajustes nas informações e estrutura de apresentação.
